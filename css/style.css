@@ -440,6 +440,30 @@ header .menu .offers .text {
 header .menu .menu-main .menu-item {
   margin-right: 20px;
 }
+header .menu .menu-main .menu-item .dropdown {
+  top: 80%;
+  left: -10px;
+  z-index: -1;
+  opacity: 0;
+  transition: 0.2s;
+}
+header .menu .menu-main .menu-item .dropdown > .inner {
+  background-color: #fff;
+  width: 200px;
+  padding: 5px 0;
+  border-radius: 10px;
+}
+header .menu .menu-main .menu-item .dropdown > .inner > a {
+  padding: 7px 15px;
+}
+header .menu .menu-main .menu-item .dropdown > .inner > a:hover {
+  background-color: #ebebeb;
+}
+header .menu .menu-main .menu-item:hover > .dropdown {
+  top: 100%;
+  z-index: 2;
+  opacity: 1;
+}
 
 .home-slider .slider-main {
   width: 100%;
@@ -448,6 +472,15 @@ header .menu .menu-main .menu-item {
   .home-slider .slider-main {
     width: calc(100% - 380px);
   }
+}
+.home-slider .slider-main .swiper-slide .caption {
+  padding: 10px 30px;
+  top: 0;
+  left: 0;
+}
+.home-slider .slider-main .swiper-slide .caption .heading {
+  font-size: 28px;
+  line-height: normal;
 }
 .home-slider .slider-main .swiper-wrapper {
   padding-bottom: 40px;
@@ -807,4 +840,26 @@ header .menu .menu-main .menu-item {
 .footer-bottom .social-links-container > a > div {
   height: 30px;
   width: 30px;
+}
+
+.app-breadcrumbs .bd-link {
+  color: #5D5D5D;
+  font-size: 13px;
+}
+.app-breadcrumbs .bd-link:not(:last-child):after {
+  content: "/";
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.app-breadcrumbs .bd-link.active {
+  font-weight: 600;
+  pointer-events: none;
+}
+.app-breadcrumbs .bd-link.active > a {
+  color: #ff057c;
+}
+
+.test-details .test-details-main > .inner {
+  padding: 25px;
+  border-radius: 15px;
 }/*# sourceMappingURL=style.css.map */

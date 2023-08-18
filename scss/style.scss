@@ -116,6 +116,32 @@ header {
     .menu-main {
       .menu-item {
         margin-right: 20px;
+        .dropdown {
+          top: 80%;
+          left: -10px;
+          z-index: -1;
+          opacity: 0;
+          @include transition;
+          > .inner {
+            background-color: #fff;
+            width: 200px;
+            padding: 5px 0;
+            // min-height: 200px;
+            border-radius: 10px;
+            > a {
+              padding: 7px 15px;
+              &:hover {
+                background-color: #ebebeb;
+              }
+            }
+          }
+        }
+        &:hover > .dropdown {
+          top: 100%;
+          // left: 0;
+          z-index: 2;
+          opacity: 1;
+        }
       }
     }
   }
@@ -131,6 +157,18 @@ header {
     width: 100%;
     @include min_width($BP_lg_min) {
       width: calc(100% - #{$width});
+    }
+
+    .swiper-slide {
+      .caption {
+        padding: 10px 30px;
+        top: 0;
+        left: 0;
+        .heading {
+          font-size: 28px;
+          line-height: normal;
+        }
+      }
     }
 
     .swiper-wrapper {
@@ -558,3 +596,45 @@ header {
   }
 }
 // footer styles end
+
+
+// breadcrumbs styles start
+#app-breadcrumbs {
+  
+}
+.app-breadcrumbs {
+  .bd-link {
+    color: #5D5D5D;
+    font-size: 13px;
+    &:not(:last-child):after {
+      content: '/';
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    &.active {
+      font-weight: 600;
+      pointer-events: none;
+      > a {
+        color: $app_color_primary;
+      }
+    }
+  }
+}
+// breadcrumbs styles end
+
+
+// test details styles end
+#test-details {
+
+}
+.test-details {
+
+  .test-details-main {
+    >.inner {
+      padding: 25px;
+      border-radius: 15px;
+    }
+  }
+}
+// test details styles end
+
