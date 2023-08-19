@@ -119,7 +119,12 @@ a.opacity-link-hover:hover {
 }
 
 .page-heading-container .heading {
-  font-size: 25px;
+  font-size: 22px;
+}
+@media screen and (min-width: 768px) {
+  .page-heading-container .heading {
+    font-size: 25px;
+  }
 }
 .page-heading-container .view-all-link::after {
   content: "";
@@ -382,7 +387,12 @@ header #main {
   padding-bottom: 15px;
 }
 header .main .logo {
-  width: 180px;
+  width: 140px;
+}
+@media screen and (min-width: 576px) {
+  header .main .logo {
+    width: 180px;
+  }
 }
 header .main .right-link > .icon {
   font-size: 28px;
@@ -406,6 +416,16 @@ header .main .right-link .cart-items {
   background: #fff;
   color: #333;
 }
+@media screen and (max-width: 575px) {
+  header .main .right-link.call-to-link {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 575px) {
+  header .main .right-link.call-to-link > .icon, header .main .right-link.login-signup-link > .icon {
+    display: none;
+  }
+}
 header .main .search > .inner {
   background-color: #fff;
   height: 45px;
@@ -428,17 +448,39 @@ header .main .search button {
   width: 50px;
   font-size: 22px;
 }
+@media screen and (max-width: 991px) {
+  header .main .search select {
+    width: 90px;
+  }
+}
 @media screen and (min-width: 992px) {
   header .main .search input {
+    width: 180px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  header .main .search input {
     width: 300px;
+  }
+}
+@media screen and (max-width: 991px) {
+  header .main .search {
+    width: 100%;
+    order: 1;
+    margin-top: 10px;
+  }
+  header .main .search input {
+    flex-grow: 1;
   }
 }
 header .menu .offers .text {
   font-size: 24px;
   line-height: normal;
 }
-header .menu .menu-main .menu-item {
-  margin-right: 20px;
+@media screen and (min-width: 1200px) {
+  header .menu .menu-main .menu-item {
+    margin-right: 20px;
+  }
 }
 header .menu .menu-main .menu-item .dropdown {
   top: 80%;
@@ -448,10 +490,14 @@ header .menu .menu-main .menu-item .dropdown {
   transition: 0.2s;
 }
 header .menu .menu-main .menu-item .dropdown > .inner {
-  background-color: #fff;
-  width: 200px;
   padding: 5px 0;
   border-radius: 10px;
+}
+@media screen and (min-width: 1200px) {
+  header .menu .menu-main .menu-item .dropdown > .inner {
+    background-color: #fff;
+    width: 200px;
+  }
 }
 header .menu .menu-main .menu-item .dropdown > .inner > a {
   padding: 7px 15px;
@@ -464,11 +510,67 @@ header .menu .menu-main .menu-item:hover > .dropdown {
   z-index: 2;
   opacity: 1;
 }
+@media screen and (max-width: 1199px) {
+  header .menu .menu-main .menu-item > a {
+    display: block;
+    padding: 10px 10px;
+  }
+  header .menu .menu-main .menu-item .dropdown {
+    position: relative !important;
+    background: #f7f7f7;
+    opacity: 1;
+    border-radius: 5px;
+    padding: 0;
+    left: 0;
+    top: 0;
+    display: none;
+  }
+  header .menu .menu-main .menu-item:hover > .dropdown {
+    display: block;
+  }
+}
+@media screen and (max-width: 1199px) {
+  header .menu .menu-main {
+    position: fixed;
+    background: #fff;
+    width: 300px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 12;
+    padding: 15px;
+    overflow: auto;
+    transition: 0.2s;
+  }
+  header .menu .menu-main:not(.active) {
+    left: -100%;
+  }
+}
+header .menu .mobile-menu-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #e0eaff;
+  z-index: -12;
+  opacity: 0;
+}
+header .menu .mobile-menu-overlay.active {
+  opacity: 0.6;
+  z-index: 12;
+}
+header .menu .mobile-menu-icon {
+  height: 32px;
+  width: 32px;
+  font-size: 22px;
+  border-radius: 3px;
+}
 
 .home-slider .slider-main {
   width: 100%;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
   .home-slider .slider-main {
     width: calc(100% - 380px);
   }
@@ -478,9 +580,29 @@ header .menu .menu-main .menu-item:hover > .dropdown {
   top: 0;
   left: 0;
 }
+@media screen and (max-width: 767px) {
+  .home-slider .slider-main .swiper-slide .caption {
+    padding: 10px 15px;
+  }
+}
 .home-slider .slider-main .swiper-slide .caption .heading {
   font-size: 28px;
   line-height: normal;
+}
+@media screen and (max-width: 767px) {
+  .home-slider .slider-main .swiper-slide .caption .heading {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .home-slider .slider-main .swiper-slide .caption .other {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .home-slider .slider-main .swiper-slide .caption button {
+    font-size: 12px !important;
+  }
 }
 .home-slider .slider-main .swiper-wrapper {
   padding-bottom: 40px;
@@ -501,7 +623,7 @@ header .menu .menu-main .menu-item:hover > .dropdown {
 .home-slider .test-online {
   width: 100%;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
   .home-slider .test-online {
     width: 380px;
     padding-left: 40px;
@@ -538,8 +660,10 @@ header .menu .menu-main .menu-item:hover > .dropdown {
   border-radius: 15px;
   padding: 20px 20px;
 }
-.our-info .item {
-  padding: 0 15px;
+@media screen and (min-width: 768px) {
+  .our-info .item {
+    padding: 0 15px;
+  }
 }
 .our-info .item .img {
   height: 45px;
@@ -621,16 +745,22 @@ header .menu .menu-main .menu-item:hover > .dropdown {
   transform: translateY(-50%);
   z-index: 1;
   font-size: 25px;
+  background: #fff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  width: 35px;
+  text-align: center;
+  z-index: 1;
+  border-radius: 5px;
 }
 .packages .packages-slider-button-prev.swiper-button-disabled,
 .packages .packages-slider-button-next.swiper-button-disabled {
   opacity: 0.4;
 }
 .packages .packages-slider-button-prev {
-  right: 0;
+  right: 5px;
 }
 .packages .packages-slider-button-next {
-  left: 0;
+  left: 5px;
 }
 
 .health-tests .health-test-item > .inner {
@@ -653,16 +783,22 @@ header .menu .menu-main .menu-item:hover > .dropdown {
   transform: translateY(-50%);
   z-index: 1;
   font-size: 25px;
+  background: #fff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  width: 35px;
+  text-align: center;
+  z-index: 1;
+  border-radius: 5px;
 }
 .health-tests .health-tests-slider-button-prev.swiper-button-disabled,
 .health-tests .health-tests-slider-button-next.swiper-button-disabled {
   opacity: 0.4;
 }
 .health-tests .health-tests-slider-button-prev {
-  right: 0;
+  right: 5px;
 }
 .health-tests .health-tests-slider-button-next {
-  left: 0;
+  left: 5px;
 }
 
 .upload-prescription .swiper-wrapper {
@@ -730,7 +866,8 @@ header .menu .menu-main .menu-item:hover > .dropdown {
 }
 
 .check-up-categories .category-link {
-  padding-right: 15px;
+  padding-left: 7.5px;
+  padding-right: 7.5px;
   padding-bottom: 15px;
 }
 .check-up-categories .category-link > a {
@@ -747,8 +884,12 @@ header .menu .menu-main .menu-item:hover > .dropdown {
   font-size: 25px;
 }
 .why-us .rt .item {
-  margin-right: 20px;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .why-us .rt .item {
+    margin-right: 20px;
+  }
 }
 .why-us .rt .item > .inner {
   height: 160px;
@@ -761,9 +902,8 @@ header .menu .menu-main .menu-item:hover > .dropdown {
   background: #eef4ff url("../images/download-app-bg.png") no-repeat 100%;
 }
 
-.download-app img {
-  margin: 0 auto;
-  width: 95%;
+.download-app .apps-links img {
+  width: 150px;
 }
 @media screen and (min-width: 992px) {
   .download-app .center > .inner {
@@ -771,7 +911,12 @@ header .menu .menu-main .menu-item:hover > .dropdown {
   }
 }
 .download-app .center .head {
-  font-size: 30px;
+  font-size: 24px;
+}
+@media screen and (min-width: 768px) {
+  .download-app .center .head {
+    font-size: 30px;
+  }
 }
 .download-app .center .sub-head {
   font-size: 20px;
@@ -791,16 +936,25 @@ header .menu .menu-main .menu-item:hover > .dropdown {
   }
 }
 .patients-testimonial > .lt {
-  width: 330px;
+  width: 100%;
+}
+@media screen and (min-width: 992px) {
+  .patients-testimonial > .lt {
+    width: 330px;
+  }
 }
 .patients-testimonial > .lt .head {
-  font-size: 30px;
+  font-size: 24px;
 }
-.patients-testimonial > .lt .desc {
-  margin-bottom: 80px;
+@media screen and (min-width: 768px) {
+  .patients-testimonial > .lt .head {
+    font-size: 30px;
+  }
 }
-.patients-testimonial > .rt {
-  padding-left: 15px;
+@media screen and (min-width: 992px) {
+  .patients-testimonial > .lt .desc {
+    margin-bottom: 80px;
+  }
 }
 @media screen and (min-width: 992px) {
   .patients-testimonial > .rt {
@@ -808,8 +962,12 @@ header .menu .menu-main .menu-item:hover > .dropdown {
   }
 }
 .patients-testimonial > .rt .item-main {
-  margin-right: 15px;
   margin-bottom: 15px;
+}
+@media screen and (min-width: 992px) {
+  .patients-testimonial > .rt .item-main {
+    margin-right: 15px;
+  }
 }
 @media screen and (min-width: 992px) {
   .patients-testimonial > .rt .item-main {
@@ -843,7 +1001,7 @@ header .menu .menu-main .menu-item:hover > .dropdown {
 }
 
 .app-breadcrumbs .bd-link {
-  color: #5D5D5D;
+  color: #5d5d5d;
   font-size: 13px;
 }
 .app-breadcrumbs .bd-link:not(:last-child):after {
@@ -859,7 +1017,54 @@ header .menu .menu-main .menu-item:hover > .dropdown {
   color: #ff057c;
 }
 
-.test-details .test-details-main > .inner {
-  padding: 25px;
+.shadow-box {
+  padding: 15px;
   border-radius: 15px;
+}
+@media screen and (min-width: 768px) {
+  .shadow-box {
+    padding: 25px;
+  }
+}
+
+.test-details .td-rt-sec {
+  width: 100%;
+}
+@media screen and (min-width: 992px) {
+  .test-details .td-rt-sec {
+    width: 350px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .test-details .td-rt-sec {
+    width: 400px;
+  }
+}
+.test-details .price-sec .main-price {
+  font-size: 22px;
+}
+.test-details .test-requirements .tr-item .tr-badge {
+  padding: 7px 13px;
+  background-color: #eaf1ff;
+  border: 1px solid #c7d9ff;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.test-details .home-visit-sec > .inner {
+  padding: 0;
+  overflow: hidden;
+}
+.test-details .home-visit-sec > .inner > div {
+  padding: 20px;
+}
+.test-details .home-visit-sec .head {
+  padding: 15px 20px;
+  background-color: #e0eaff;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 767px) {
+  div[aria-controls^=swiper-wrapper] {
+    display: none !important;
+  }
 }/*# sourceMappingURL=style.css.map */

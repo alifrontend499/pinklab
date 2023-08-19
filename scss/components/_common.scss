@@ -106,7 +106,10 @@ a {
 
 .page-heading-container {
   .heading {
-    font-size: 25px;
+    font-size: 22px;
+    @include min_width($BP_md_min) {
+      font-size: 25px;
+    }
   }
   .view-all-link {
     &::after {

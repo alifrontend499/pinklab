@@ -1,1474 +1,508 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
 
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
-    <!-- icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
-    />
-    <!-- swiper -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
 
-    <!-- main style -->
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+  <!-- icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
-  <body>
-    <header>
-      <!-- top -->
-      <section id="top-links">
-        <div class="container">
-          <div class="top-links d-flex flex-wrap">
-            <div class="link position-relative">
-              <a href="#" class="primary-link-hover app-fw-500">About</a>
-            </div>
-            <div class="link position-relative">
-              <a href="#" class="primary-link-hover app-fw-500">Customers</a>
-            </div>
-            <div class="link position-relative">
-              <a href="#" class="primary-link-hover app-fw-500">Doctors</a>
-            </div>
-            <div class="link position-relative">
-              <a href="#" class="primary-link-hover app-fw-500">Partners</a>
-            </div>
-            <div class="link position-relative">
-              <a href="#" class="primary-link-hover app-fw-500">Corporate</a>
-            </div>
-            <div class="link position-relative">
-              <a href="#" class="primary-link-hover app-fw-500">Careers</a>
-            </div>
+  <!-- main style -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header>
+    <!-- top -->
+    <section id="top-links">
+      <div class="container">
+        <div class="top-links d-flex flex-wrap">
+          <div class="link position-relative">
+            <a href="#" class="primary-link-hover app-fw-500">About</a>
+          </div>
+          <div class="link position-relative">
+            <a href="#" class="primary-link-hover app-fw-500">Customers</a>
+          </div>
+          <div class="link position-relative">
+            <a href="#" class="primary-link-hover app-fw-500">Doctors</a>
+          </div>
+          <div class="link position-relative">
+            <a href="#" class="primary-link-hover app-fw-500">Partners</a>
+          </div>
+          <div class="link position-relative">
+            <a href="#" class="primary-link-hover app-fw-500">Corporate</a>
+          </div>
+          <div class="link position-relative">
+            <a href="#" class="primary-link-hover app-fw-500">Careers</a>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- main -->
-      <section id="main">
-        <div class="container">
-          <div class="main d-flex justify-content-between">
-            <!-- logo -->
-            <a href="#" class="logo">
-              <img src="images/logo.png" alt="" class="img-fluid" />
-            </a>
+    <!-- main -->
+    <section id="main">
+      <div class="container">
+        <div class="main d-flex flex-wrap align-items-center justify-content-between">
+          <!-- logo -->
+          <a href="#" class="logo">
+            <img src="images/logo.png" alt="" class="img-fluid" />
+          </a>
 
-            <!-- search -->
-            <div class="search">
-              <div class="inner d-flex">
-                <select>
-                  <option>Mumbai</option>
-                  <option>Delhi</option>
-                  <option>Chandigarh</option>
-                </select>
-                <input
-                  type="text"
-                  placeholder="Search for Tests, Health Checkups"
-                />
-                <button type="button" class="search">
-                  <i class="bi bi-search"></i>
-                </button>
-              </div>
-            </div>
-
-            <!-- right sec -->
-            <div class="right-sec">
-              <div class="inner d-flex flex-wrap">
-                <!-- call to link -->
-                <a
-                  href=""
-                  class="right-link call-to-link opacity-link-hover d-inline-flex align-items-center text-white me-2 me-lg-4"
-                >
-                  <div class="icon me-2">
-                    <i class="bi bi-telephone-inbound"></i>
-                  </div>
-                  <div class="text">
-                    <span class="d-block"> Customer Care </span>
-                    <span class="d-block"> 123-4567-890 </span>
-                  </div>
-                </a>
-
-                <!-- call to link -->
-                <a
-                  href=""
-                  class="right-link login-signup-link opacity-link-hover d-inline-flex align-items-center text-white me-2 me-lg-4"
-                >
-                  <div class="icon me-2">
-                    <i class="bi bi-person"></i>
-                  </div>
-                  <div class="text">
-                    <span class="d-block"> Login/Signup </span>
-                  </div>
-                </a>
-
-                <!-- cart link -->
-                <div
-                  class="right-link cart-link opacity-link-hover d-inline-flex align-items-center position-relative"
-                >
-                  <!-- cart icon -->
-                  <a href="" class="icon text-white me-2">
-                    <i class="bi bi-bag"></i>
-                  </a>
-                  <span
-                    class="cart-items rounded-circle position-absolute d-flex align-items-center justify-content-center"
-                    >1</span
-                  >
-                  <!-- dropdown -->
-                </div>
-              </div>
+          <!-- search -->
+          <div class="search">
+            <div class="inner d-flex">
+              <select>
+                <option>Mumbai</option>
+                <option>Delhi</option>
+                <option>Chandigarh</option>
+              </select>
+              <input type="text" placeholder="Search for Tests, Health Checkups" />
+              <button type="button" class="search">
+                <i class="bi bi-search"></i>
+              </button>
             </div>
           </div>
-        </div>
-      </section>
 
-      <!-- menu -->
-      <section id="menu">
-        <div class="container">
-          <div class="menu d-flex align-items-center py-1">
-            <!-- menu main -->
-            <div class="menu-main col pe-3">
-              <div class="inner d-flex flex-wrap">
-                <!-- link -->
-                <div class="menu-item position-relative">
-                  <a href="#" class="primary-link-hover app-fw-600">
-                    <span class="me-1">Blood Test</span>
-                    <i class="bi bi-caret-down-fill"></i>
-                  </a>
-                  <!-- dropdown -->
-                  <div class="dropdown position-absolute">
-                    <div class="inner shadow-box d-flex flex-column">
-                      <a
-                        href="#"
-                        class="primary-link-hover app-fs-15 app-fw-500"
-                      >
-                        <span class="me-1">Sub menu</span>
-                      </a>
-                      <a
-                        href="#"
-                        class="primary-link-hover app-fs-15 app-fw-500"
-                      >
-                        <span class="me-1">Sub menu 2</span>
-                      </a>
-                      <a
-                        href="#"
-                        class="primary-link-hover app-fs-15 app-fw-500"
-                      >
-                        <span class="me-1">Sub menu 3</span>
-                      </a>
-                    </div>
-                  </div>
+          <!-- right sec -->
+          <div class="right-sec">
+            <div class="inner d-flex flex-wrap">
+              <!-- call to link -->
+              <a href=""
+                class="right-link call-to-link opacity-link-hover d-inline-flex align-items-center text-white me-2 me-lg-4">
+                <div class="icon me-2">
+                  <i class="bi bi-telephone-inbound"></i>
                 </div>
-
-                <!-- link -->
-                <div class="menu-item position-relative app-fw-600">
-                  <a href="#" class="primary-link-hover">
-                    <span class="me-1">X-rays & Scans</span>
-                    <i class="bi bi-caret-down-fill"></i>
-                  </a>
-                  <!-- dropdown -->
-                  <div class="dropdown position-absolute">
-                    <div class="inner shadow-box d-flex flex-column">
-                      <a
-                        href="#"
-                        class="primary-link-hover app-fs-15 app-fw-500"
-                      >
-                        <span class="me-1">Sub menu</span>
-                      </a>
-                      <a
-                        href="#"
-                        class="primary-link-hover app-fs-15 app-fw-500"
-                      >
-                        <span class="me-1">Sub menu 2</span>
-                      </a>
-                      <a
-                        href="#"
-                        class="primary-link-hover app-fs-15 app-fw-500"
-                      >
-                        <span class="me-1">Sub menu 3</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- link -->
-                <div class="menu-item position-relative app-fw-600">
-                  <a href="#" class="primary-link-hover">
-                    <span class="me-1">Genetic Testing</span>
-                    <i class="bi bi-caret-down-fill"></i>
-                  </a>
-                  <!-- dropdown -->
-                  <div class="dropdown position-absolute">
-                    <div class="inner shadow-box d-flex flex-column">
-                      <a
-                        href="#"
-                        class="primary-link-hover app-fs-15 app-fw-500"
-                      >
-                        <span class="me-1">Sub menu</span>
-                      </a>
-                      <a
-                        href="#"
-                        class="primary-link-hover app-fs-15 app-fw-500"
-                      >
-                        <span class="me-1">Sub menu 2</span>
-                      </a>
-                      <a
-                        href="#"
-                        class="primary-link-hover app-fs-15 app-fw-500"
-                      >
-                        <span class="me-1">Sub menu 3</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- link -->
-                <div class="menu-item position-relative app-fw-600">
-                  <a href="#" class="primary-link-hover">
-                    <span class="me-1">Doctor Consultation</span>
-                    <i class="bi bi-caret-down-fill"></i> </a
-                  ><!-- dropdown -->
-                  <div class="dropdown position-absolute">
-                    <div class="inner shadow-box d-flex flex-column">
-                      <a
-                        href="#"
-                        class="primary-link-hover app-fs-15 app-fw-500"
-                      >
-                        <span class="me-1">Sub menu</span>
-                      </a>
-                      <a
-                        href="#"
-                        class="primary-link-hover app-fs-15 app-fw-500"
-                      >
-                        <span class="me-1">Sub menu 2</span>
-                      </a>
-                      <a
-                        href="#"
-                        class="primary-link-hover app-fs-15 app-fw-500"
-                      >
-                        <span class="me-1">Sub menu 3</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- link -->
-                <div class="menu-item position-relative app-fw-600">
-                  <a href="#" class="primary-link-hover">
-                    <span class="me-1">Surgery</span>
-                    <i class="bi bi-caret-down-fill"></i>
-                  </a>
-                  <!-- dropdown -->
-                  <div class="dropdown position-absolute">
-                    <div class="inner shadow-box d-flex flex-column">
-                      <a
-                        href="#"
-                        class="primary-link-hover app-fs-15 app-fw-500"
-                      >
-                        <span class="me-1">Sub menu</span>
-                      </a>
-                      <a
-                        href="#"
-                        class="primary-link-hover app-fs-15 app-fw-500"
-                      >
-                        <span class="me-1">Sub menu 2</span>
-                      </a>
-                      <a
-                        href="#"
-                        class="primary-link-hover app-fs-15 app-fw-500"
-                      >
-                        <span class="me-1">Sub menu 3</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- link -->
-                <div class="menu-item position-relative app-fw-600">
-                  <a href="#" class="primary-link-hover">
-                    <span class="me-1">Supplements</span>
-                    <i class="bi bi-caret-down-fill"></i>
-                  </a>
-                  <!-- dropdown -->
-                  <div class="dropdown position-absolute">
-                    <div class="inner shadow-box d-flex flex-column">
-                      <a
-                        href="#"
-                        class="primary-link-hover app-fs-15 app-fw-500"
-                      >
-                        <span class="me-1">Sub menu</span>
-                      </a>
-                      <a
-                        href="#"
-                        class="primary-link-hover app-fs-15 app-fw-500"
-                      >
-                        <span class="me-1">Sub menu 2</span>
-                      </a>
-                      <a
-                        href="#"
-                        class="primary-link-hover app-fs-15 app-fw-500"
-                      >
-                        <span class="me-1">Sub menu 3</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- link -->
-                <div class="menu-item position-relative app-fw-600">
-                  <a href="#" class="primary-link-hover">
-                    <span class="me-1">Health Tips</span>
-                    <i class="bi bi-caret-down-fill"></i>
-                  </a>
-                  <!-- dropdown -->
-                  <div class="dropdown position-absolute">
-                    <div class="inner shadow-box d-flex flex-column">
-                      <a
-                        href="#"
-                        class="primary-link-hover app-fs-15 app-fw-500"
-                      >
-                        <span class="me-1">Sub menu</span>
-                      </a>
-                      <a
-                        href="#"
-                        class="primary-link-hover app-fs-15 app-fw-500"
-                      >
-                        <span class="me-1">Sub menu 2</span>
-                      </a>
-                      <a
-                        href="#"
-                        class="primary-link-hover app-fs-15 app-fw-500"
-                      >
-                        <span class="me-1">Sub menu 3</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- offers -->
-            <div class="offers">
-              <a
-                href="#"
-                class="inner d-flex align-items-center opacity-link-hover"
-              >
-                <div class="img me-1">
-                  <img
-                    src="images/icons/offers-icon.png"
-                    alt=""
-                    class="img-fluid"
-                    width="46"
-                  />
-                </div>
-
-                <div class="text app-color-secondary">
-                  <p class="mb-0 app-fw-800">OFFERS</p>
+                <div class="text">
+                  <span class="d-block"> Customer Care </span>
+                  <span class="d-block"> 123-4567-890 </span>
                 </div>
               </a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </header>
 
-    <main>
-      <section id="app-breadcrumbs" class="my-3">
-        <div class="container">
-          <div class="app-breadcrumbs d-flex flex-wrap">
-            <div class="bd-link">
-              <a href="#" class="primary-link-hover">Home</a>
-            </div>
-            <div class="bd-link">
-              <a href="#" class="primary-link-hover">Health Profile</a>
-            </div>
-            <div class="bd-link active">
-              <a href="#" class="primary-link-hover">Kidney Function Test</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- test details -->
-      <section id="test-details" class="app-b-pad">
-        <div class="container">
-          <div class="test-details row">
-            <!-- left sec -->
-            <div class="col-12 col-lg-8 td-lt-sec">
-              <div class="inner">
-                <div class="test-details-main">
-                  <div class="inner shadow-box bg-white d-flex">
-                    <div class="icon pt-1">
-                      <img
-                        src="images/icons/test-tube-icon.png"
-                        alt=""
-                        class="img-fluid"
-                        width="35"
-                      />
-                    </div>
-                    <div class="content col ps-3">
-                      <!-- head sec -->
-                      <div class="head-sec d-flex align-items-center mb-2">
-                        <p class="mb-0 me-2 app-fw-600 app-fs-17">
-                          Renal/Kidney Function Test (RFT/KFT)
-                        </p>
-                        <div
-                          class="booked-times d-flex ms-auto app-fs-14 app-fw-500"
-                        >
-                          <i class="bi bi-star app-color-primary"></i>
-                          <p class="mb-0 ms-2">Booked <span>942</span> times</p>
-                        </div>
-                      </div>
-
-                      <!-- desc sec -->
-                      <div class="desc-sec mb-3">
-                        <span class="app-fs-11 mb-1">Also known as:</span>
-                        <p class="mb-0 app-fs-15 app-fw-500">
-                          Renal function panel, kidney function
-                          test Includes Uric Acid, Blood Urea Nitrogen
-                          (BUN)/Serum Urea, Calcium (Ca)
-                          <a href="#" class="app-color-primary app-fw-600">+ 5 Tests</a>
-                        </p>
-                      </div>
-
-                      <!-- price sec -->
-                      <div class="price-sec d-flex flex-wrap align-items-center">
-                        <p class="mb-0 main-price app-fw-600 app-fs-20 app-color-secondary me-3">₹499</p>
-                        <p class="mb-0 old-price text-decoration-line-through app-fs-15 me-2">₹849</p>
-                        <p class="mb-0 percent-off app-color-primary app-fs-15">41% OFF</p>
-                      </div>
-
-                      <!-- divider -->
-                      <div class="divider mt-3 mt-lg-4 mb-3 mb-lg-3 border"></div>
-
-                      <div class="bottom-sec d-flex align-items-center">
-                        <div class="date d-flex app-fs-13 app-fw-500 me-3">
-                          <i class="bi bi-calendar3"></i>
-                          <span class="ms-2">Next slot available:12-08-2023, 12:30:00 PM</span>
-                        </div>
-                        <div class="times d-flex app-fs-13 app-fw-500 me-3">
-                          <i class="bi bi-card-checklist"></i>
-                          <span class="ms-2">Reports in 15 Hrs</span>
-                        </div>
-                        <div class="btn-container ms-auto">
-                          <button class="app-btn app-btn-primary app-fs-14 py-2">
-                            Book Now
-                          </button>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
+              <!-- call to link -->
+              <a href=""
+                class="right-link login-signup-link opacity-link-hover d-inline-flex align-items-center text-white me-3 me-lg-4">
+                <div class="icon me-2">
+                  <i class="bi bi-person"></i>
                 </div>
-              </div>
-            </div>
-
-            <!-- right sec -->
-            <div class="col-12 col-lg-4 td-rt-sec">
-              <div class="inner"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- packages -->
-      <section id="packages" class="app-b-pad">
-        <div class="container">
-          <div class="packages">
-            <div
-              class="page-heading-container d-flex align-items-center mb-3 mb-lg-4"
-            >
-              <p class="heading app-color-secondary app-fw-600 col pe-2 mb-0">
-                Similar Health Packages
-              </p>
-              <a
-                href=""
-                class="view-all-link app-fw-500 app-fs-17 app-color-primary"
-                >View All</a
-              >
-            </div>
-
-            <div class="swiper packages-slider">
-              <div class="swiper-wrapper">
-                <!-- slider item -->
-                <div class="swiper-slide">
-                  <div class="package-item">
-                    <div class="inner bg-white shadow-box">
-                      <div class="banner position-absolute">
-                        <p class="mb-0 app-fs-15">47%</p>
-                      </div>
-                      <p class="head app-color-secondary app-fw-600 mb-0">
-                        Health kind Mini
-                      </p>
-                      <div class="divider my-3 border"></div>
-                      <p class="desc mb-4">
-                        It covers tests for your vital organs along with
-                        important tests like HbAlc for diabetes
-                      </p>
-
-                      <div class="info-item d-flex align-items-center mb-3">
-                        <div class="icon me-3">
-                          <img
-                            src="images/icons/labs-icon.png"
-                            alt=""
-                            class="img-fluid"
-                            width="30"
-                          />
-                        </div>
-                        <div class="text app-fs-14">
-                          <p class="mb-0">Tests Parameters</p>
-                          <p class="mb-0 app-fw-700">69 parameters</p>
-                        </div>
-                      </div>
-
-                      <div class="info-item d-flex align-items-center mb-3">
-                        <div class="icon me-3">
-                          <img
-                            src="images/icons/female-icon.png"
-                            alt=""
-                            class="img-fluid"
-                            width="30"
-                          />
-                        </div>
-                        <div class="text app-fs-14">
-                          <p class="mb-0">Ideal For</p>
-                          <p class="mb-0 app-fw-700">Female below 30 years</p>
-                        </div>
-                      </div>
-
-                      <a
-                        href="#"
-                        class="know-more-link app-color-primary app-fw-600 opacity-link-hover d-inline-block"
-                        >Know More</a
-                      >
-
-                      <div class="price-container mt-4">
-                        <div class="inner d-flex app-bg-secondary">
-                          <p class="price mb-0 col text-white">
-                            <span class="old-price app-fw-300">₹7365</span>
-                            <span class="new-price app-fw-600">₹1949</span>
-                          </p>
-                          <button class="app-btn app-btn-primary">
-                            Book Now
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                <div class="text">
+                  <span class="d-block"> Login/Signup </span>
                 </div>
+              </a>
 
-                <!-- slider item -->
-                <div class="swiper-slide">
-                  <div class="package-item">
-                    <div class="inner bg-white shadow-box">
-                      <div class="banner position-absolute">
-                        <p class="mb-0 app-fs-15">47%</p>
-                      </div>
-                      <p class="head app-color-secondary app-fw-600 mb-0">
-                        Health kind Mini
-                      </p>
-                      <div class="divider my-3 border"></div>
-                      <p class="desc mb-4">
-                        It covers tests for your vital organs along with
-                        important tests like HbAlc for diabetes
-                      </p>
-
-                      <div class="info-item d-flex align-items-center mb-3">
-                        <div class="icon me-3">
-                          <img
-                            src="images/icons/labs-icon.png"
-                            alt=""
-                            class="img-fluid"
-                            width="30"
-                          />
-                        </div>
-                        <div class="text app-fs-14">
-                          <p class="mb-0">Tests Parameters</p>
-                          <p class="mb-0 app-fw-700">69 parameters</p>
-                        </div>
-                      </div>
-
-                      <div class="info-item d-flex align-items-center mb-3">
-                        <div class="icon me-3">
-                          <img
-                            src="images/icons/female-icon.png"
-                            alt=""
-                            class="img-fluid"
-                            width="30"
-                          />
-                        </div>
-                        <div class="text app-fs-14">
-                          <p class="mb-0">Ideal For</p>
-                          <p class="mb-0 app-fw-700">Female below 30 years</p>
-                        </div>
-                      </div>
-
-                      <a
-                        href="#"
-                        class="know-more-link app-color-primary app-fw-600 opacity-link-hover d-inline-block"
-                        >Know More</a
-                      >
-
-                      <div class="price-container mt-4">
-                        <div class="inner d-flex app-bg-secondary">
-                          <p class="price mb-0 col text-white">
-                            <span class="old-price app-fw-300">₹7365</span>
-                            <span class="new-price app-fw-600">₹1949</span>
-                          </p>
-                          <button class="app-btn app-btn-primary">
-                            Book Now
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- slider item -->
-                <div class="swiper-slide">
-                  <div class="package-item">
-                    <div class="inner bg-white shadow-box">
-                      <div class="banner position-absolute">
-                        <p class="mb-0 app-fs-15">47%</p>
-                      </div>
-                      <p class="head app-color-secondary app-fw-600 mb-0">
-                        Health kind Mini
-                      </p>
-                      <div class="divider my-3 border"></div>
-                      <p class="desc mb-4">
-                        It covers tests for your vital organs along with
-                        important tests like HbAlc for diabetes
-                      </p>
-
-                      <div class="info-item d-flex align-items-center mb-3">
-                        <div class="icon me-3">
-                          <img
-                            src="images/icons/labs-icon.png"
-                            alt=""
-                            class="img-fluid"
-                            width="30"
-                          />
-                        </div>
-                        <div class="text app-fs-14">
-                          <p class="mb-0">Tests Parameters</p>
-                          <p class="mb-0 app-fw-700">69 parameters</p>
-                        </div>
-                      </div>
-
-                      <div class="info-item d-flex align-items-center mb-3">
-                        <div class="icon me-3">
-                          <img
-                            src="images/icons/female-icon.png"
-                            alt=""
-                            class="img-fluid"
-                            width="30"
-                          />
-                        </div>
-                        <div class="text app-fs-14">
-                          <p class="mb-0">Ideal For</p>
-                          <p class="mb-0 app-fw-700">Female below 30 years</p>
-                        </div>
-                      </div>
-
-                      <a
-                        href="#"
-                        class="know-more-link app-color-primary app-fw-600 opacity-link-hover d-inline-block"
-                        >Know More</a
-                      >
-
-                      <div class="price-container mt-4">
-                        <div class="inner d-flex app-bg-secondary">
-                          <p class="price mb-0 col text-white">
-                            <span class="old-price app-fw-300">₹7365</span>
-                            <span class="new-price app-fw-600">₹1949</span>
-                          </p>
-                          <button class="app-btn app-btn-primary">
-                            Book Now
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- slider item -->
-                <div class="swiper-slide">
-                  <div class="package-item">
-                    <div class="inner bg-white shadow-box">
-                      <div class="banner position-absolute">
-                        <p class="mb-0 app-fs-15">47%</p>
-                      </div>
-                      <p class="head app-color-secondary app-fw-600 mb-0">
-                        Health kind Mini
-                      </p>
-                      <div class="divider my-3 border"></div>
-                      <p class="desc mb-4">
-                        It covers tests for your vital organs along with
-                        important tests like HbAlc for diabetes
-                      </p>
-
-                      <div class="info-item d-flex align-items-center mb-3">
-                        <div class="icon me-3">
-                          <img
-                            src="images/icons/labs-icon.png"
-                            alt=""
-                            class="img-fluid"
-                            width="30"
-                          />
-                        </div>
-                        <div class="text app-fs-14">
-                          <p class="mb-0">Tests Parameters</p>
-                          <p class="mb-0 app-fw-700">69 parameters</p>
-                        </div>
-                      </div>
-
-                      <div class="info-item d-flex align-items-center mb-3">
-                        <div class="icon me-3">
-                          <img
-                            src="images/icons/female-icon.png"
-                            alt=""
-                            class="img-fluid"
-                            width="30"
-                          />
-                        </div>
-                        <div class="text app-fs-14">
-                          <p class="mb-0">Ideal For</p>
-                          <p class="mb-0 app-fw-700">Female below 30 years</p>
-                        </div>
-                      </div>
-
-                      <a
-                        href="#"
-                        class="know-more-link app-color-primary app-fw-600 opacity-link-hover d-inline-block"
-                        >Know More</a
-                      >
-
-                      <div class="price-container mt-4">
-                        <div class="inner d-flex app-bg-secondary">
-                          <p class="price mb-0 col text-white">
-                            <span class="old-price app-fw-300">₹7365</span>
-                            <span class="new-price app-fw-600">₹1949</span>
-                          </p>
-                          <button class="app-btn app-btn-primary">
-                            Book Now
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- slider item -->
-                <div class="swiper-slide">
-                  <div class="package-item">
-                    <div class="inner bg-white shadow-box">
-                      <div class="banner position-absolute">
-                        <p class="mb-0 app-fs-15">47%</p>
-                      </div>
-                      <p class="head app-color-secondary app-fw-600 mb-0">
-                        Health kind Mini
-                      </p>
-                      <div class="divider my-3 border"></div>
-                      <p class="desc mb-4">
-                        It covers tests for your vital organs along with
-                        important tests like HbAlc for diabetes
-                      </p>
-
-                      <div class="info-item d-flex align-items-center mb-3">
-                        <div class="icon me-3">
-                          <img
-                            src="images/icons/labs-icon.png"
-                            alt=""
-                            class="img-fluid"
-                            width="30"
-                          />
-                        </div>
-                        <div class="text app-fs-14">
-                          <p class="mb-0">Tests Parameters</p>
-                          <p class="mb-0 app-fw-700">69 parameters</p>
-                        </div>
-                      </div>
-
-                      <div class="info-item d-flex align-items-center mb-3">
-                        <div class="icon me-3">
-                          <img
-                            src="images/icons/female-icon.png"
-                            alt=""
-                            class="img-fluid"
-                            width="30"
-                          />
-                        </div>
-                        <div class="text app-fs-14">
-                          <p class="mb-0">Ideal For</p>
-                          <p class="mb-0 app-fw-700">Female below 30 years</p>
-                        </div>
-                      </div>
-
-                      <a
-                        href="#"
-                        class="know-more-link app-color-primary app-fw-600 opacity-link-hover d-inline-block"
-                        >Know More</a
-                      >
-
-                      <div class="price-container mt-4">
-                        <div class="inner d-flex app-bg-secondary">
-                          <p class="price mb-0 col text-white">
-                            <span class="old-price app-fw-300">₹7365</span>
-                            <span class="new-price app-fw-600">₹1949</span>
-                          </p>
-                          <button class="app-btn app-btn-primary">
-                            Book Now
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="packages-slider-button-prev">
-                <i class="bi bi-arrow-right-circle"></i>
-              </div>
-              <div class="packages-slider-button-next">
-                <i class="bi bi-arrow-left-circle"></i>
+              <!-- cart link -->
+              <div class="right-link cart-link opacity-link-hover d-inline-flex align-items-center position-relative">
+                <!-- cart icon -->
+                <a href="" class="icon text-white me-2">
+                  <i class="bi bi-bag"></i>
+                </a>
+                <span
+                  class="cart-items rounded-circle position-absolute d-flex align-items-center justify-content-center">1</span>
+                <!-- dropdown -->
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- why us -->
-      <section id="why-us" class="app-tb-pad">
-        <div class="container">
-          <div class="why-us d-flex flex-wrap">
-            <div class="lt col-12 col-md-7">
-              <div class="inner pe-0 pe-lg-5">
-                <p class="head app-color-secondary app-fw-600 mb-3">
-                  Why <span class="app-color-primary">1st Pink Lab</span>?
-                </p>
-                <p class="sub-head app-fw-500 mb-3">
-                  1st Pink Lab has been present for over 40 years in the market.
-                </p>
-
-                <p class="desc mb-3">
-                  1st Pink Lab has a team of 200 senior pathologists and over
-                  2000 technicians delivering diagnostic solutions in the areas
-                  of routine, semi specialty and super specialty domains like
-                  Oncology, Neurology, Gynaecology, Nephrology and many more.
-                </p>
-                <p class="desc mb-4 mb-lg-5">
-                  We offer a comprehensive range of 4000+ clinical laboratory
-                  tests and profiles, which are used for prediction, early
-                  detection, diagnostic screening, confirmation and/or
-                  monitoring of the disease
-                </p>
-
-                <button class="app-btn app-btn-primary app-fs-15 py-2">
-                  <span class="ms-1">Book Package Now</span>
-                </button>
-              </div>
-            </div>
-
-            <div class="rt col-12 col-md-5">
-              <div class="inner d-flex align-items-start flex-wrap">
-                <!-- sec 1 -->
-                <div class="sec1 col-12 col-md-6">
-                  <!-- item -->
-                  <div class="item text-center">
-                    <div
-                      class="inner shadow-box bg-white d-flex flex-column justify-content-center"
-                    >
-                      <div class="img mb-3">
-                        <img
-                          src="images/icons/lab-icon.png"
-                          alt=""
-                          class="img-fluid"
-                          width="50"
-                        />
-                      </div>
-                      <div class="text">
-                        <p class="mb-0 app-fw-500 app-fs-15">
-                          170+ Advanced Labs
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- item -->
-                  <div class="item text-center">
-                    <div
-                      class="inner shadow-box bg-white d-flex flex-column justify-content-center"
-                    >
-                      <div class="img mb-3">
-                        <img
-                          src="images/icons/hospital-icon.png"
-                          alt=""
-                          class="img-fluid"
-                          width="50"
-                        />
-                      </div>
-                      <div class="text">
-                        <p class="mb-0 app-fw-500 app-fs-15">
-                          Trusted by Leading Doctors & Hospitals
-                        </p>
-                      </div>
-                    </div>
+    <!-- menu -->
+    <section id="menu">
+      <div class="container">
+        <div class="menu d-flex align-items-center py-1">
+          <!-- open mobile menu -->
+          <a href="#"
+            class="mobile-menu-icon open-menu text-white app-bg-primary d-flex d-xl-none align-items-center justify-content-center">
+            <i class="bi bi-list"></i>
+          </a>
+          <div class="mobile-menu-overlay d-xl-none"></div>
+          <!-- menu main -->
+          <div class="menu-main col pe-3">
+            <!-- close mobile menu -->
+            <a href="#"
+              class="mobile-menu-icon close-menu text-white app-bg-primary d-flex d-xl-none align-items-center justify-content-center ms-auto">
+              <i class="bi bi-x"></i>
+            </a>
+            <div class="inner d-flex flex-wrap flex-column flex-xl-row">
+              <!-- link -->
+              <div class="menu-item position-relative">
+                <a href="test-page.html" class="primary-link-hover app-fw-600">
+                  <span class="me-1">Blood Test</span>
+                  <i class="bi bi-caret-down-fill"></i>
+                </a>
+                <!-- dropdown -->
+                <div class="dropdown position-absolute">
+                  <div class="inner shadow-box d-flex flex-column">
+                    <a href="#" class="primary-link-hover app-fs-15 app-fw-500">
+                      <span class="me-1">Sub menu</span>
+                    </a>
+                    <a href="#" class="primary-link-hover app-fs-15 app-fw-500">
+                      <span class="me-1">Sub menu 2</span>
+                    </a>
+                    <a href="#" class="primary-link-hover app-fs-15 app-fw-500">
+                      <span class="me-1">Sub menu 3</span>
+                    </a>
                   </div>
                 </div>
+              </div>
 
-                <!-- sec 2 -->
-                <div class="sec2 col-12 col-md-6 pt-3">
-                  <!-- item -->
-                  <div class="item text-center">
-                    <div
-                      class="inner shadow-box bg-white d-flex flex-column justify-content-center"
-                    >
-                      <div class="img mb-3">
-                        <img
-                          src="images/icons/science-office.png"
-                          alt=""
-                          class="img-fluid"
-                          width="50"
-                        />
-                      </div>
-                      <div class="text">
-                        <p class="mb-0 app-fw-500 app-fs-15">
-                          Over 2000+ Scientific Officers
-                        </p>
-                      </div>
-                    </div>
+              <!-- link -->
+              <div class="menu-item position-relative app-fw-600">
+                <a href="#" class="primary-link-hover">
+                  <span class="me-1">X-rays & Scans</span>
+                  <i class="bi bi-caret-down-fill"></i>
+                </a>
+                <!-- dropdown -->
+                <div class="dropdown position-absolute">
+                  <div class="inner shadow-box d-flex flex-column">
+                    <a href="#" class="primary-link-hover app-fs-15 app-fw-500">
+                      <span class="me-1">Sub menu</span>
+                    </a>
+                    <a href="#" class="primary-link-hover app-fs-15 app-fw-500">
+                      <span class="me-1">Sub menu 2</span>
+                    </a>
+                    <a href="#" class="primary-link-hover app-fs-15 app-fw-500">
+                      <span class="me-1">Sub menu 3</span>
+                    </a>
                   </div>
+                </div>
+              </div>
 
-                  <!-- item -->
-                  <div class="item text-center">
-                    <div
-                      class="inner shadow-box bg-white d-flex flex-column justify-content-center"
-                    >
-                      <div class="img mb-3">
-                        <img
-                          src="images/icons/accuracy-icon.png"
-                          alt=""
-                          class="img-fluid"
-                          width="50"
-                        />
-                      </div>
-                      <div class="text">
-                        <p class="mb-0 app-fw-500 app-fs-15">
-                          Proficiency Testing for Accurate Reports
-                        </p>
-                      </div>
-                    </div>
+              <!-- link -->
+              <div class="menu-item position-relative app-fw-600">
+                <a href="#" class="primary-link-hover">
+                  <span class="me-1">Genetic Testing</span>
+                  <i class="bi bi-caret-down-fill"></i>
+                </a>
+                <!-- dropdown -->
+                <div class="dropdown position-absolute">
+                  <div class="inner shadow-box d-flex flex-column">
+                    <a href="#" class="primary-link-hover app-fs-15 app-fw-500">
+                      <span class="me-1">Sub menu</span>
+                    </a>
+                    <a href="#" class="primary-link-hover app-fs-15 app-fw-500">
+                      <span class="me-1">Sub menu 2</span>
+                    </a>
+                    <a href="#" class="primary-link-hover app-fs-15 app-fw-500">
+                      <span class="me-1">Sub menu 3</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- link -->
+              <div class="menu-item position-relative app-fw-600">
+                <a href="#" class="primary-link-hover">
+                  <span class="me-1">Doctor Consultation</span>
+                  <i class="bi bi-caret-down-fill"></i> </a><!-- dropdown -->
+                <div class="dropdown position-absolute">
+                  <div class="inner shadow-box d-flex flex-column">
+                    <a href="#" class="primary-link-hover app-fs-15 app-fw-500">
+                      <span class="me-1">Sub menu</span>
+                    </a>
+                    <a href="#" class="primary-link-hover app-fs-15 app-fw-500">
+                      <span class="me-1">Sub menu 2</span>
+                    </a>
+                    <a href="#" class="primary-link-hover app-fs-15 app-fw-500">
+                      <span class="me-1">Sub menu 3</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- link -->
+              <div class="menu-item position-relative app-fw-600">
+                <a href="#" class="primary-link-hover">
+                  <span class="me-1">Surgery</span>
+                  <i class="bi bi-caret-down-fill"></i>
+                </a>
+                <!-- dropdown -->
+                <div class="dropdown position-absolute">
+                  <div class="inner shadow-box d-flex flex-column">
+                    <a href="#" class="primary-link-hover app-fs-15 app-fw-500">
+                      <span class="me-1">Sub menu</span>
+                    </a>
+                    <a href="#" class="primary-link-hover app-fs-15 app-fw-500">
+                      <span class="me-1">Sub menu 2</span>
+                    </a>
+                    <a href="#" class="primary-link-hover app-fs-15 app-fw-500">
+                      <span class="me-1">Sub menu 3</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- link -->
+              <div class="menu-item position-relative app-fw-600">
+                <a href="#" class="primary-link-hover">
+                  <span class="me-1">Supplements</span>
+                  <i class="bi bi-caret-down-fill"></i>
+                </a>
+                <!-- dropdown -->
+                <div class="dropdown position-absolute">
+                  <div class="inner shadow-box d-flex flex-column">
+                    <a href="#" class="primary-link-hover app-fs-15 app-fw-500">
+                      <span class="me-1">Sub menu</span>
+                    </a>
+                    <a href="#" class="primary-link-hover app-fs-15 app-fw-500">
+                      <span class="me-1">Sub menu 2</span>
+                    </a>
+                    <a href="#" class="primary-link-hover app-fs-15 app-fw-500">
+                      <span class="me-1">Sub menu 3</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- link -->
+              <div class="menu-item position-relative app-fw-600">
+                <a href="#" class="primary-link-hover">
+                  <span class="me-1">Health Tips</span>
+                  <i class="bi bi-caret-down-fill"></i>
+                </a>
+                <!-- dropdown -->
+                <div class="dropdown position-absolute">
+                  <div class="inner shadow-box d-flex flex-column">
+                    <a href="#" class="primary-link-hover app-fs-15 app-fw-500">
+                      <span class="me-1">Sub menu</span>
+                    </a>
+                    <a href="#" class="primary-link-hover app-fs-15 app-fw-500">
+                      <span class="me-1">Sub menu 2</span>
+                    </a>
+                    <a href="#" class="primary-link-hover app-fs-15 app-fw-500">
+                      <span class="me-1">Sub menu 3</span>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
 
-      <!-- download app -->
-      <section id="download-app" class="app-tb-mar">
-        <div class="container">
-          <div class="download-app d-flex flex-wrap">
-            <!-- lt -->
-            <div class="lt col-12 col-lg-3 app-t-pad">
-              <img src="images/ios-img.png" alt="" class="img-fluid" />
-            </div>
-
-            <!-- center -->
-            <div
-              class="center d-flex align-items-center justify-content-center col-12 col-lg-6 app-t-pad px-3"
-            >
-              <div class="inner text-center">
-                <p class="head app-color-secondary app-fw-500 mb-3">
-                  Simplifying Healthcare Impacting Lives
-                </p>
-                <p class="sub-head app-color-primary app-fw-600 mb-4">
-                  Download the App for Free
-                </p>
-                <div class="d-flex">
-                  <a href="#" class="download-link android">
-                    <img
-                      src="images/icons/ios-download-icon.png"
-                      alt=""
-                      class="img-fluid"
-                    />
-                  </a>
-                  <a href="#" class="download-link ios">
-                    <img
-                      src="images/icons/ios-download-icon.png"
-                      alt=""
-                      class="img-fluid"
-                    />
-                  </a>
-                </div>
+          <!-- offers -->
+          <div class="offers ms-auto">
+            <a href="#" class="inner d-flex align-items-center opacity-link-hover">
+              <div class="img me-1">
+                <img src="images/icons/offers-icon.png" alt="" class="img-fluid" width="46" />
               </div>
-            </div>
 
-            <!-- rt -->
-            <div class="rt col-12 col-lg-3">
-              <img src="images/android-img.png" alt="" class="img-fluid" />
-            </div>
+              <div class="text app-color-secondary">
+                <p class="mb-0 app-fw-800">OFFERS</p>
+              </div>
+            </a>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+  </header>
 
-      <!-- patients testimonial -->
-      <section id="patients-testimonial" class="app-t-pad">
-        <div class="container">
-          <div class="patients-testimonial d-flex flex-wrap">
-            <!-- lt -->
-            <div class="lt">
-              <div class="inner">
-                <p class="head app-color-secondary app-fw-600 mb-3 mb-lg-4">
-                  What Our Patients are Saying About Us
-                </p>
-                <div class="ratings d-flex app-fs-17 mb-3">
-                  <i class="bi bi-star-fill app-color-primary me-2"></i>
-                  <i class="bi bi-star-fill app-color-primary me-2"></i>
-                  <i class="bi bi-star-fill app-color-primary me-2"></i>
-                  <i class="bi bi-star-fill app-color-primary me-2"></i>
-                  <i class="bi bi-star-fill app-color-primary me-2"></i>
-                </div>
-                <p class="desc app-fs-15 app-fw-600">
-                  4.5 Review from out patients on google
-                </p>
-                <img src="images/microscope.png" alt="" class="img-fluid" />
-              </div>
-            </div>
+  <main>
+    <!-- breadcrumbs -->
+    <section id="app-breadcrumbs" class="my-3">
+      <div class="container">
+        <div class="app-breadcrumbs d-flex flex-wrap">
+          <div class="bd-link">
+            <a href="#" class="primary-link-hover">Home</a>
+          </div>
+          <div class="bd-link">
+            <a href="#" class="primary-link-hover">Health Profile</a>
+          </div>
+          <div class="bd-link active">
+            <a href="#" class="primary-link-hover">Kidney Function Test</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <!-- rt -->
-            <div class="rt col pt-lg-3">
-              <div class="inner d-flex flex-wrap">
-                <!-- item container -->
-                <div class="col-12 col-lg-6 item-container">
-                  <!-- item main -->
-                  <div class="item-main">
-                    <div class="main-inner shadow-box bg-white">
-                      <div class="ratings app-fs-14 d-flex mb-3">
-                        <i class="bi bi-star-fill app-color-primary me-1"></i>
-                        <i class="bi bi-star-fill app-color-primary me-1"></i>
-                        <i class="bi bi-star-fill app-color-primary me-1"></i>
-                        <i class="bi bi-star-fill app-color-primary me-1"></i>
-                        <i class="bi bi-star-half app-color-primary me-1"></i>
+    <!-- test details -->
+    <section id="test-details" class="app-b-pad">
+      <div class="container">
+        <div class="test-details row">
+          <!-- left sec -->
+          <div class="col td-lt-sec">
+            <div class="inner">
+              <!-- test details main -->
+              <div class="test-details-main mb-2 mb-lg-4">
+                <div class="inner shadow-box bg-white d-flex">
+                  <div class="icon pt-1 d-none d-md-block">
+                    <img src="images/icons/test-tube-icon.png" alt="" class="img-fluid" width="35" />
+                  </div>
+                  <div class="content col ps-md-3">
+                    <!-- head sec -->
+                    <div class="head-sec d-flex align-items-center mb-2">
+                      <p class="mb-0 me-2 app-fw-600 app-fs-17">
+                        Renal/Kidney Function Test (RFT/KFT)
+                      </p>
+                      <div class="booked-times d-flex ms-auto app-fs-14 app-fw-500">
+                        <i class="bi bi-star app-color-primary"></i>
+                        <p class="mb-0 ms-2">Booked <span>942</span> times</p>
                       </div>
+                    </div>
 
-                      <div
-                        class="pateint-details d-flex align-items-center mb-3"
-                      >
+                    <!-- desc sec -->
+                    <div class="desc-sec mb-3">
+                      <span class="app-fs-11 mb-1">Also known as:</span>
+                      <p class="mb-0 app-fs-15 app-fw-500">
+                        Renal function panel, kidney function
+                        test Includes Uric Acid, Blood Urea Nitrogen
+                        (BUN)/Serum Urea, Calcium (Ca)
+                        <a href="#" class="app-color-primary app-fw-600">+ 5 Tests</a>
+                      </p>
+                    </div>
+
+                    <!-- price sec -->
+                    <div class="price-sec d-flex flex-wrap align-items-center">
+                      <p class="mb-0 main-price app-fw-600 app-color-secondary me-3">₹499</p>
+                      <p class="mb-0 old-price text-decoration-line-through app-fs-15 me-2">₹849</p>
+                      <p class="mb-0 percent-off app-color-primary app-fs-15">41% OFF</p>
+                    </div>
+
+                    <!-- divider -->
+                    <div class="divider mt-3 mt-lg-4 mb-3 mb-lg-3 border"></div>
+
+                    <div class="bottom-sec d-flex flex-wrap align-items-center">
+                      <div class="date d-flex app-fs-13 app-fw-500 me-3">
+                        <i class="bi bi-calendar3"></i>
+                        <span class="ms-2">Next slot available:12-08-2023, 12:30:00 PM</span>
+                      </div>
+                      <div class="times d-flex app-fs-13 app-fw-500 me-3">
+                        <i class="bi bi-card-checklist"></i>
+                        <span class="ms-2">Reports in 15 Hrs</span>
+                      </div>
+                      <div class="btn-container ms-auto">
+                        <button class="app-btn app-btn-primary app-fs-14 py-2">
+                          Book Now
+                        </button>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <!-- other test details main -->
+              <div class="other-test-details-main mb-2 mb-lg-3">
+                <div class="inner shadow-box bg-white">
+                  <!-- test requirements -->
+                  <div class="test-requirements d-flex flex-wrap justify-content-between mb-3 mb-lg-4">
+                    <!-- item -->
+                    <div class="tr-item px-1 mb-2">
+                      <div class="inner d-flex align-items-center">
                         <div class="img">
-                          <img
-                            src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
-                            alt=""
-                            class="img-fluid rounded-circle"
-                            width="60"
-                            height="60"
-                          />
+                          <img src="images/icons/sample-type-icon.png" alt="" class="img-fluid" width="25">
                         </div>
-                        <div class="text ps-3">
-                          <p class="name app-color-secondary app-fw-600 mb-1">
-                            Meghan Watts
-                          </p>
-                          <p class="desc app-fs-14 mb-0">Marketing Manager</p>
+                        <div class="text ps-2 pe-3">
+                          <p class="mb-0 app-fw-600">Sample Type</p>
                         </div>
+                        <div class="tr-badge">Blood</div>
                       </div>
-                      <p class="desc app-fs-15 mb-0">
-                        Lorem ipsum dolor sit amet, consectet adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua enim ad minim veniam Lorem ipsum dolor sit
-                        amet, consectet adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua enim ad
-                        minim veniam
-                      </p>
+                    </div>
+                    <!-- item -->
+                    <div class="tr-item px-1 mb-2">
+                      <div class="inner d-flex align-items-center">
+                        <div class="img">
+                          <img src="images/icons/fasting-icon.png" alt="" class="img-fluid" width="25">
+                        </div>
+                        <div class="text ps-2 pe-3">
+                          <p class="mb-0 app-fw-600">Fasting Required</p>
+                        </div>
+                        <div class="tr-badge">No</div>
+                      </div>
+                    </div>
+                    <!-- item -->
+                    <div class="tr-item px-1 mb-2">
+                      <div class="inner d-flex align-items-center">
+                        <div class="img">
+                          <img src="images/icons/tube-type-icon.png" alt="" class="img-fluid" width="25">
+                        </div>
+                        <div class="text ps-2 pe-3">
+                          <p class="mb-0 app-fw-600">Tube Type</p>
+                        </div>
+                        <div class="tr-badge">Plain</div>
+                      </div>
                     </div>
                   </div>
 
-                  <!-- item main -->
-                  <div class="item-main">
-                    <div class="main-inner shadow-box bg-white">
-                      <div class="ratings app-fs-14 d-flex mb-3">
-                        <i class="bi bi-star-fill app-color-primary me-1"></i>
-                        <i class="bi bi-star-fill app-color-primary me-1"></i>
-                        <i class="bi bi-star-fill app-color-primary me-1"></i>
-                        <i class="bi bi-star-fill app-color-primary me-1"></i>
-                        <i class="bi bi-star-half app-color-primary me-1"></i>
+                  <!-- package details -->
+                  <div class="package-details mb-3 mb-lg-4">
+                    <div class="otd-head d-flex align-items-center mb-2">
+                      <div class="icon">
+                        <img src="images/icons/package-icon.png" alt="" class="img-fluid" width="25">
                       </div>
-
-                      <div
-                        class="pateint-details d-flex align-items-center mb-3"
-                      >
-                        <div class="img">
-                          <img
-                            src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
-                            alt=""
-                            class="img-fluid rounded-circle"
-                            width="60"
-                            height="60"
-                          />
-                        </div>
-                        <div class="text ps-3">
-                          <p class="name app-color-secondary app-fw-600 mb-1">
-                            Meghan Watts
-                          </p>
-                          <p class="desc app-fs-14 mb-0">Marketing Manager</p>
-                        </div>
-                      </div>
-                      <p class="desc app-fs-15 mb-0">
-                        Lorem ipsum dolor sit amet, consectet adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua enim ad minim veniam Lorem ipsum dolor sit
-                        amet, consectet adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua enim ad
-                        minim veniam
-                      </p>
+                      <p class="mb-0 ps-2 app-fw-600">Package Includes</p>
                     </div>
-                  </div>
-                </div>
 
-                <!-- item container -->
-                <div class="col-12 col-lg-6 item-container pt-lg-4">
-                  <!-- item main -->
-                  <div class="item-main">
-                    <div class="main-inner shadow-box bg-white">
-                      <div class="ratings app-fs-14 d-flex mb-3">
-                        <i class="bi bi-star-fill app-color-primary me-1"></i>
-                        <i class="bi bi-star-fill app-color-primary me-1"></i>
-                        <i class="bi bi-star-fill app-color-primary me-1"></i>
-                        <i class="bi bi-star-fill app-color-primary me-1"></i>
-                        <i class="bi bi-star-half app-color-primary me-1"></i>
-                      </div>
-
-                      <div
-                        class="pateint-details d-flex align-items-center mb-3"
-                      >
-                        <div class="img">
-                          <img
-                            src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
-                            alt=""
-                            class="img-fluid rounded-circle"
-                            width="60"
-                            height="60"
-                          />
-                        </div>
-                        <div class="text ps-3">
-                          <p class="name app-color-secondary app-fw-600 mb-1">
-                            Meghan Watts
-                          </p>
-                          <p class="desc app-fs-14 mb-0">Marketing Manager</p>
-                        </div>
-                      </div>
-                      <p class="desc app-fs-15 mb-0">
-                        Lorem ipsum dolor sit amet, consectet adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua enim ad minim veniam Lorem ipsum dolor sit
-                        amet, consectet adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua enim ad
-                        minim veniam
-                      </p>
+                    <div class="listing" style="margin-left: 35px;">
+                      <ul class="list-group-flush app-fw-300">
+                        <li>Uric Acid</li>
+                        <li>Blood Urea Nitrogen (BUN)/Serum Urea</li>
+                        <li>Calcium (Ca)</li>
+                      </ul>
+                      <a href="#" class="app-color-secondary app-fw-600 text-decoration-underline">Show More</a>
                     </div>
                   </div>
 
-                  <!-- item main -->
-                  <div class="item-main">
-                    <div class="main-inner shadow-box bg-white">
-                      <div class="ratings app-fs-14 d-flex mb-3">
-                        <i class="bi bi-star-fill app-color-primary me-1"></i>
-                        <i class="bi bi-star-fill app-color-primary me-1"></i>
-                        <i class="bi bi-star-fill app-color-primary me-1"></i>
-                        <i class="bi bi-star-fill app-color-primary me-1"></i>
-                        <i class="bi bi-star-half app-color-primary me-1"></i>
+                  <!-- description -->
+                  <div class="description mb-3 mb-lg-4">
+                    <div class="otd-head d-flex align-items-center mb-2">
+                      <div class="icon">
+                        <img src="images/icons/description-icon.png" alt="" class="img-fluid" width="25">
                       </div>
+                      <p class="mb-0 ps-2 app-fw-600">Description</p>
+                    </div>
 
-                      <div
-                        class="pateint-details d-flex align-items-center mb-3"
-                      >
-                        <div class="img">
-                          <img
-                            src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
-                            alt=""
-                            class="img-fluid rounded-circle"
-                            width="60"
-                            height="60"
-                          />
-                        </div>
-                        <div class="text ps-3">
-                          <p class="name app-color-secondary app-fw-600 mb-1">
-                            Meghan Watts
-                          </p>
-                          <p class="desc app-fs-14 mb-0">Marketing Manager</p>
-                        </div>
-                      </div>
-                      <p class="desc app-fs-15 mb-0">
-                        Lorem ipsum dolor sit amet, consectet adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua enim ad minim veniam Lorem ipsum dolor sit
-                        amet, consectet adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua enim ad
-                        minim veniam
+                    <div class="main" style="padding-left: 35px;">
+                      <p class="mb-2 app-fw-300">
+                        Renal Function Test (RFT), also called kidney function tests, are a group of tests performed to
+                        evaluate the functions of the kidneys. It helps diagnose inflammation, infection or damage in
+                        the kidneys. The test measures Calcium, Uric Acid, Creatinine, BUN and BUN/Creatinine Ratio in
+                        ...
                       </p>
+                      <a href="#" class="app-color-secondary app-fw-600 text-decoration-underline">Show More</a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
 
-      <!-- footer -->
-      <footer class="app-tb-pad">
-        <!-- footer top -->
-        <section id="footer-top" class="app-b-pad">
-          <div class="container">
-            <div class="footer-top row">
-              <!-- ftitem -->
-              <div class="col-12 col-lg-4 ft-item">
-                <div
-                  class="inner bg-white shadow-box d-flex align-items-center"
-                >
-                  <div class="img pe-3">
-                    <img
-                      src="images/icons/nabl-icon.png"
-                      alt=""
-                      class="img-fluid"
-                      width="55"
-                    />
+          <!-- right sec -->
+          <div class="td-rt-sec">
+            <div class="inner">
+              <!-- add to cart sec -->
+              <div class="add-to-cart-sec mb-2 mb-lg-4">
+                <div class="inner shadow-box bg-white text-center">
+                  <p class="head app-fw-500 mb-3">Renal/Kidney Function Test (RFT/KFT)</p>
+                  <div class="price-sec d-flex flex-wrap justify-content-center align-items-center mb-3">
+                    <p class="mb-0 main-price app-fw-600 app-color-secondary me-3">₹499</p>
+                    <p class="mb-0 old-price text-decoration-line-through app-fs-15 me-2">₹849</p>
+                    <p class="mb-0 percent-off app-color-primary app-fs-15">41% OFF</p>
                   </div>
-                  <div class="text app-fs-18 app-fw-600 app-color-secondary">
-                    NABL & CAP Accredited labs
-                  </div>
-                </div>
-              </div>
-              <!-- ftitem -->
-              <div class="col-12 col-lg-4 ft-item">
-                <div
-                  class="inner bg-white shadow-box d-flex align-items-center"
-                >
-                  <div class="img pe-3">
-                    <img
-                      src="images/icons/smart-report-icon.png"
-                      alt=""
-                      class="img-fluid"
-                      width="55"
-                    />
-                  </div>
-                  <div class="text app-fs-18 app-fw-600 app-color-secondary">
-                    Smart Report with Trend Analysis
-                  </div>
-                </div>
-              </div>
-              <!-- ftitem -->
-              <div class="col-12 col-lg-4 ft-item">
-                <div
-                  class="inner bg-white shadow-box d-flex align-items-center"
-                >
-                  <div class="img pe-3">
-                    <img
-                      src="images/icons/leading-doctors-icon.png"
-                      alt=""
-                      class="img-fluid"
-                      width="55"
-                    />
-                  </div>
-                  <div class="text app-fs-18 app-fw-600 app-color-secondary">
-                    Reports trusted by leading doctors and hospitals
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- footer main -->
-        <section id="footer-main">
-          <div class="container">
-            <div class="footer-main row">
-              <!-- fm item -->
-              <div class="fm-item col-12 col-lg-3">
-                <div class="fm-item-inner">
-                  <p
-                    class="fm-head app-color-secondary app-fs-19 app-fw-600 mb-2"
-                  >
-                    Company
-                  </p>
-                  <div class="fm-links-container d-flex flex-wrap">
-                    <!-- link -->
-                    <div class="col-12 col-md-6 fm-link mb-2 pe-2">
-                      <a
-                        href="#"
-                        class="primary-link-hover app-fw-500 app-fs-15"
-                      >
-                        About Us
-                      </a>
-                    </div>
-                    <!-- link -->
-                    <div class="col-12 col-md-6 fm-link mb-2 pe-2">
-                      <a
-                        href="#"
-                        class="primary-link-hover app-fw-500 app-fs-15"
-                      >
-                        Investors
-                      </a>
-                    </div>
-                    <!-- link -->
-                    <div class="col-12 col-md-6 fm-link mb-2 pe-2">
-                      <a
-                        href="#"
-                        class="primary-link-hover app-fw-500 app-fs-15"
-                      >
-                        Our Labs
-                      </a>
-                    </div>
-                    <!-- link -->
-                    <div class="col-12 col-md-6 fm-link mb-2 pe-2">
-                      <a
-                        href="#"
-                        class="primary-link-hover app-fw-500 app-fs-15"
-                      >
-                        Partners
-                      </a>
-                    </div>
-                    <!-- link -->
-                    <div class="col-12 col-md-6 fm-link mb-2 pe-2">
-                      <a
-                        href="#"
-                        class="primary-link-hover app-fw-500 app-fs-15"
-                      >
-                        Corporates
-                      </a>
-                    </div>
-                    <!-- link -->
-                    <div class="col-12 col-md-6 fm-link mb-2 pe-2">
-                      <a
-                        href="#"
-                        class="primary-link-hover app-fw-500 app-fs-15"
-                      >
-                        CSR
-                      </a>
-                    </div>
-                    <!-- link -->
-                    <div class="col-12 col-md-6 fm-link mb-2 pe-2">
-                      <a
-                        href="#"
-                        class="primary-link-hover app-fw-500 app-fs-15"
-                      >
-                        Media Center
-                      </a>
-                    </div>
-                    <!-- link -->
-                    <div class="col-12 col-md-6 fm-link mb-2 pe-2">
-                      <a
-                        href="#"
-                        class="primary-link-hover app-fw-500 app-fs-15"
-                      >
-                        Careers
-                      </a>
-                    </div>
+                  <div class="btn-container d-flex justify-content-center align-items-center">
+                    <button class="app-btn app-btn-secondary app-fs-14 mx-2">
+                      Add To Cart
+                    </button>
+                    <button class="app-btn app-btn-primary app-fs-14 mx-2">
+                      Book Now
+                    </button>
                   </div>
                 </div>
               </div>
 
-              <!-- fm item -->
-              <div class="fm-item col-12 col-lg-3">
-                <div class="fm-item-inner">
-                  <p
-                    class="fm-head app-color-secondary app-fs-19 app-fw-600 mb-2"
-                  >
-                    Services
-                  </p>
-                  <div class="fm-links-container d-flex flex-column">
-                    <!-- link -->
-                    <div class="col-12 col-md-6 fm-link mb-2">
-                      <a
-                        href="#"
-                        class="primary-link-hover app-fw-500 app-fs-15"
-                      >
-                        Pathology Testing Services
-                      </a>
-                    </div>
-                    <!-- link -->
-                    <div class="col-12 col-md-6 fm-link mb-2">
-                      <a
-                        href="#"
-                        class="primary-link-hover app-fw-500 app-fs-15"
-                      >
-                        Corporate Wellness
-                      </a>
-                    </div>
-                    <!-- link -->
-                    <div class="col-12 col-md-6 fm-link mb-2">
-                      <a
-                        href="#"
-                        class="primary-link-hover app-fw-500 app-fs-15"
-                      >
-                        Lab In Hospitals
-                      </a>
-                    </div>
-                    <!-- link -->
-                    <div class="col-12 col-md-6 fm-link mb-2">
-                      <a
-                        href="#"
-                        class="primary-link-hover app-fw-500 app-fs-15"
-                      >
-                        Clinical Research Services
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- fm item -->
-              <div class="fm-item col-12 col-lg-2">
-                <div class="fm-item-inner">
-                  <p
-                    class="fm-head app-color-secondary app-fs-19 app-fw-600 mb-2"
-                  >
-                    Contact Us
-                  </p>
-                  <div class="fm-links-container d-flex flex-column">
-                    <!-- link -->
-                    <div class="col-12 col-md-6 fm-link mb-2 pe-2">
-                      <a
-                        href="#"
-                        class="primary-link-hover app-fw-500 app-fs-15"
-                      >
-                        Contact Us
-                      </a>
-                    </div>
-                    <!-- link -->
-                    <div class="col-12 col-md-6 fm-link mb-2 pe-2">
-                      <a
-                        href="#"
-                        class="primary-link-hover app-fw-500 app-fs-15"
-                      >
-                        Sitemap
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- fm item -->
-              <div class="fm-item col-12 col-lg-4">
-                <div class="fm-item-inner">
-                  <p
-                    class="fm-head app-color-secondary app-fs-19 app-fw-600 mb-2"
-                  >
-                    Subscribe Our Newsletter
-                  </p>
-                  <div class="newsletter-container">
-                    <div class="app-form d-flex">
-                      <input
-                        type="text"
-                        class="form-control col"
-                        placeholder="Enter Your Email"
-                      />
-                      <button class="app-btn app-btn-primary app-fs-15 py-2">
-                        Submit
+              <!-- home visit sec -->
+              <div class="home-visit-sec mb-2 mb-lg-4">
+                <div class="inner shadow-box bg-white text-center">
+                  <p class="head app-fw-600 mb-3">Book a Home Visit Now</p>
+                  <div>
+                    <p class="desc app-fw-500 mb-3">Book any blood test or health checkup and get tested at the comfort
+                      of your home</p>
+                    <div class="btn-container d-flex justify-content-center align-items-center">
+                      <button class="app-btn app-btn-primary app-fs-14 mx-2">
+                        Get Instant Call Back
                       </button>
                     </div>
                   </div>
@@ -1476,110 +510,943 @@
               </div>
             </div>
           </div>
-        </section>
-
-        <div class="container">
-          <div class="divider my-4 border"></div>
         </div>
+      </div>
+    </section>
 
-        <!-- footer bottom -->
-        <section id="footer-bottom">
-          <div class="container">
-            <div class="footer-bottom row">
-              <!-- item -->
-              <div class="col-12 col-lg-6 fm-lt">
-                <div class="inner">
-                  <p
-                    class="fm-head app-color-secondary app-fs-19 app-fw-600 mb-2"
-                  >
-                    Download App
-                  </p>
-                  <div class="download-links d-flex mb-2">
-                    <a href="#" class="download-link android">
-                      <img
-                        src="images/icons/ios-download-icon.png"
-                        alt=""
-                        class="img-fluid"
-                      />
-                    </a>
-                    <a href="#" class="download-link ios">
-                      <img
-                        src="images/icons/ios-download-icon.png"
-                        alt=""
-                        class="img-fluid"
-                      />
-                    </a>
+    <!-- packages -->
+    <section id="packages" class="app-b-pad">
+      <div class="container">
+        <div class="packages">
+          <div class="page-heading-container d-flex align-items-center mb-3 mb-lg-4">
+            <p class="heading app-color-secondary app-fw-600 col pe-2 mb-0">
+              Similar Health Packages
+            </p>
+            <a href="" class="view-all-link app-fw-500 app-fs-17 app-color-primary">View All</a>
+          </div>
+
+          <div class="swiper packages-slider">
+            <div class="swiper-wrapper">
+              <!-- slider item -->
+              <div class="swiper-slide">
+                <div class="package-item">
+                  <div class="inner bg-white shadow-box">
+                    <div class="banner position-absolute">
+                      <p class="mb-0 app-fs-15">47%</p>
+                    </div>
+                    <p class="head app-color-secondary app-fw-600 mb-0">
+                      Health kind Mini
+                    </p>
+                    <div class="divider my-3 border"></div>
+                    <p class="desc mb-4">
+                      It covers tests for your vital organs along with
+                      important tests like HbAlc for diabetes
+                    </p>
+
+                    <div class="info-item d-flex align-items-center mb-3">
+                      <div class="icon me-3">
+                        <img src="images/icons/labs-icon.png" alt="" class="img-fluid" width="30" />
+                      </div>
+                      <div class="text app-fs-14">
+                        <p class="mb-0">Tests Parameters</p>
+                        <p class="mb-0 app-fw-700">69 parameters</p>
+                      </div>
+                    </div>
+
+                    <div class="info-item d-flex align-items-center mb-3">
+                      <div class="icon me-3">
+                        <img src="images/icons/female-icon.png" alt="" class="img-fluid" width="30" />
+                      </div>
+                      <div class="text app-fs-14">
+                        <p class="mb-0">Ideal For</p>
+                        <p class="mb-0 app-fw-700">Female below 30 years</p>
+                      </div>
+                    </div>
+
+                    <a href="#"
+                      class="know-more-link app-color-primary app-fw-600 opacity-link-hover d-inline-block">Know
+                      More</a>
+
+                    <div class="price-container mt-4">
+                      <div class="inner d-flex app-bg-secondary">
+                        <p class="price mb-0 col text-white">
+                          <span class="old-price app-fw-300">₹7365</span>
+                          <span class="new-price app-fw-600">₹1949</span>
+                        </p>
+                        <button class="app-btn app-btn-primary">
+                          Book Now
+                        </button>
+                      </div>
+                    </div>
                   </div>
-                  <p class="desc app-fw-500 app-fs-15˙ mb-0">
-                    View your reports and upcoming health checkups at one place.
-                  </p>
                 </div>
               </div>
-              <!-- item -->
-              <div class="col-12 col-lg-6 fm-rt">
-                <div class="inner">
-                  <p
-                    class="fm-head app-color-secondary app-fs-19 app-fw-600 mb-2"
-                  >
-                    Follow us
-                  </p>
 
-                  <div class="social-links-container d-flex">
-                    <!-- link -->
-                    <a href="#" class="social-link me-2">
-                      <div
-                        class="inner d-flex align-items-center justify-content-center rounded-circle app-bg-primary text-white"
-                      >
-                        <i class="bi bi-facebook"></i>
+              <!-- slider item -->
+              <div class="swiper-slide">
+                <div class="package-item">
+                  <div class="inner bg-white shadow-box">
+                    <div class="banner position-absolute">
+                      <p class="mb-0 app-fs-15">47%</p>
+                    </div>
+                    <p class="head app-color-secondary app-fw-600 mb-0">
+                      Health kind Mini
+                    </p>
+                    <div class="divider my-3 border"></div>
+                    <p class="desc mb-4">
+                      It covers tests for your vital organs along with
+                      important tests like HbAlc for diabetes
+                    </p>
+
+                    <div class="info-item d-flex align-items-center mb-3">
+                      <div class="icon me-3">
+                        <img src="images/icons/labs-icon.png" alt="" class="img-fluid" width="30" />
                       </div>
-                    </a>
-                    <!-- link -->
-                    <a href="#" class="social-link me-2">
-                      <div
-                        class="inner d-flex align-items-center justify-content-center rounded-circle app-bg-primary text-white"
-                      >
-                        <i class="bi bi-twitter"></i>
+                      <div class="text app-fs-14">
+                        <p class="mb-0">Tests Parameters</p>
+                        <p class="mb-0 app-fw-700">69 parameters</p>
                       </div>
-                    </a>
-                    <!-- link -->
-                    <a href="#" class="social-link me-2">
-                      <div
-                        class="inner d-flex align-items-center justify-content-center rounded-circle app-bg-primary text-white"
-                      >
-                        <i class="bi bi-instagram"></i>
+                    </div>
+
+                    <div class="info-item d-flex align-items-center mb-3">
+                      <div class="icon me-3">
+                        <img src="images/icons/female-icon.png" alt="" class="img-fluid" width="30" />
                       </div>
-                    </a>
-                    <!-- link -->
-                    <a href="#" class="social-link me-2">
-                      <div
-                        class="inner d-flex align-items-center justify-content-center rounded-circle app-bg-primary text-white"
-                      >
-                        <i class="bi bi-linkedin"></i>
+                      <div class="text app-fs-14">
+                        <p class="mb-0">Ideal For</p>
+                        <p class="mb-0 app-fw-700">Female below 30 years</p>
                       </div>
-                    </a>
-                    <!-- link -->
-                    <a href="#" class="social-link me-2">
-                      <div
-                        class="inner d-flex align-items-center justify-content-center rounded-circle app-bg-primary text-white"
-                      >
-                        <i class="bi bi-youtube"></i>
+                    </div>
+
+                    <a href="#"
+                      class="know-more-link app-color-primary app-fw-600 opacity-link-hover d-inline-block">Know
+                      More</a>
+
+                    <div class="price-container mt-4">
+                      <div class="inner d-flex app-bg-secondary">
+                        <p class="price mb-0 col text-white">
+                          <span class="old-price app-fw-300">₹7365</span>
+                          <span class="new-price app-fw-600">₹1949</span>
+                        </p>
+                        <button class="app-btn app-btn-primary">
+                          Book Now
+                        </button>
                       </div>
-                    </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- slider item -->
+              <div class="swiper-slide">
+                <div class="package-item">
+                  <div class="inner bg-white shadow-box">
+                    <div class="banner position-absolute">
+                      <p class="mb-0 app-fs-15">47%</p>
+                    </div>
+                    <p class="head app-color-secondary app-fw-600 mb-0">
+                      Health kind Mini
+                    </p>
+                    <div class="divider my-3 border"></div>
+                    <p class="desc mb-4">
+                      It covers tests for your vital organs along with
+                      important tests like HbAlc for diabetes
+                    </p>
+
+                    <div class="info-item d-flex align-items-center mb-3">
+                      <div class="icon me-3">
+                        <img src="images/icons/labs-icon.png" alt="" class="img-fluid" width="30" />
+                      </div>
+                      <div class="text app-fs-14">
+                        <p class="mb-0">Tests Parameters</p>
+                        <p class="mb-0 app-fw-700">69 parameters</p>
+                      </div>
+                    </div>
+
+                    <div class="info-item d-flex align-items-center mb-3">
+                      <div class="icon me-3">
+                        <img src="images/icons/female-icon.png" alt="" class="img-fluid" width="30" />
+                      </div>
+                      <div class="text app-fs-14">
+                        <p class="mb-0">Ideal For</p>
+                        <p class="mb-0 app-fw-700">Female below 30 years</p>
+                      </div>
+                    </div>
+
+                    <a href="#"
+                      class="know-more-link app-color-primary app-fw-600 opacity-link-hover d-inline-block">Know
+                      More</a>
+
+                    <div class="price-container mt-4">
+                      <div class="inner d-flex app-bg-secondary">
+                        <p class="price mb-0 col text-white">
+                          <span class="old-price app-fw-300">₹7365</span>
+                          <span class="new-price app-fw-600">₹1949</span>
+                        </p>
+                        <button class="app-btn app-btn-primary">
+                          Book Now
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- slider item -->
+              <div class="swiper-slide">
+                <div class="package-item">
+                  <div class="inner bg-white shadow-box">
+                    <div class="banner position-absolute">
+                      <p class="mb-0 app-fs-15">47%</p>
+                    </div>
+                    <p class="head app-color-secondary app-fw-600 mb-0">
+                      Health kind Mini
+                    </p>
+                    <div class="divider my-3 border"></div>
+                    <p class="desc mb-4">
+                      It covers tests for your vital organs along with
+                      important tests like HbAlc for diabetes
+                    </p>
+
+                    <div class="info-item d-flex align-items-center mb-3">
+                      <div class="icon me-3">
+                        <img src="images/icons/labs-icon.png" alt="" class="img-fluid" width="30" />
+                      </div>
+                      <div class="text app-fs-14">
+                        <p class="mb-0">Tests Parameters</p>
+                        <p class="mb-0 app-fw-700">69 parameters</p>
+                      </div>
+                    </div>
+
+                    <div class="info-item d-flex align-items-center mb-3">
+                      <div class="icon me-3">
+                        <img src="images/icons/female-icon.png" alt="" class="img-fluid" width="30" />
+                      </div>
+                      <div class="text app-fs-14">
+                        <p class="mb-0">Ideal For</p>
+                        <p class="mb-0 app-fw-700">Female below 30 years</p>
+                      </div>
+                    </div>
+
+                    <a href="#"
+                      class="know-more-link app-color-primary app-fw-600 opacity-link-hover d-inline-block">Know
+                      More</a>
+
+                    <div class="price-container mt-4">
+                      <div class="inner d-flex app-bg-secondary">
+                        <p class="price mb-0 col text-white">
+                          <span class="old-price app-fw-300">₹7365</span>
+                          <span class="new-price app-fw-600">₹1949</span>
+                        </p>
+                        <button class="app-btn app-btn-primary">
+                          Book Now
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- slider item -->
+              <div class="swiper-slide">
+                <div class="package-item">
+                  <div class="inner bg-white shadow-box">
+                    <div class="banner position-absolute">
+                      <p class="mb-0 app-fs-15">47%</p>
+                    </div>
+                    <p class="head app-color-secondary app-fw-600 mb-0">
+                      Health kind Mini
+                    </p>
+                    <div class="divider my-3 border"></div>
+                    <p class="desc mb-4">
+                      It covers tests for your vital organs along with
+                      important tests like HbAlc for diabetes
+                    </p>
+
+                    <div class="info-item d-flex align-items-center mb-3">
+                      <div class="icon me-3">
+                        <img src="images/icons/labs-icon.png" alt="" class="img-fluid" width="30" />
+                      </div>
+                      <div class="text app-fs-14">
+                        <p class="mb-0">Tests Parameters</p>
+                        <p class="mb-0 app-fw-700">69 parameters</p>
+                      </div>
+                    </div>
+
+                    <div class="info-item d-flex align-items-center mb-3">
+                      <div class="icon me-3">
+                        <img src="images/icons/female-icon.png" alt="" class="img-fluid" width="30" />
+                      </div>
+                      <div class="text app-fs-14">
+                        <p class="mb-0">Ideal For</p>
+                        <p class="mb-0 app-fw-700">Female below 30 years</p>
+                      </div>
+                    </div>
+
+                    <a href="#"
+                      class="know-more-link app-color-primary app-fw-600 opacity-link-hover d-inline-block">Know
+                      More</a>
+
+                    <div class="price-container mt-4">
+                      <div class="inner d-flex app-bg-secondary">
+                        <p class="price mb-0 col text-white">
+                          <span class="old-price app-fw-300">₹7365</span>
+                          <span class="new-price app-fw-600">₹1949</span>
+                        </p>
+                        <button class="app-btn app-btn-primary">
+                          Book Now
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="packages-slider-button-prev">
+              <i class="bi bi-arrow-right-circle"></i>
+            </div>
+            <div class="packages-slider-button-next">
+              <i class="bi bi-arrow-left-circle"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- frequent questions -->
+    <section id="frequent-questions" class="app-b-pad">
+      <div class="container">
+        <div class="frequent-questions">
+          <div class="col-12 col-lg-10 col-xl-8 main">
+            <div class="inner shadow-box bg-white">
+              <div class="page-heading-container d-flex align-items-center mb-3 mb-lg-4">
+                <p class="heading app-color-secondary app-fw-600 col pe-2 mb-0">
+                  Frequently Asked Questions
+                </p>
+              </div>
+    
+              <div class="accordion accordion-flush" id="frequent-questions-accordian">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#fqa-collapseOne" aria-expanded="false" aria-controls="fqa-collapseOne">
+                      Why is Renal (Kidney) Function Test Done
+                    </button>
+                  </h2>
+                  <div id="fqa-collapseOne" class="accordion-collapse collapse" data-bs-parent="#frequent-questions-accordian">
+                    <div class="accordion-body">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate velit excepturi, vero quo quibusdam placeat exercitationem illo consequatur nostrum error, fugit quam maxime esse doloribus incidunt ducimus ipsam harum necessitatibus!
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#fqa-collapseTwo" aria-expanded="false" aria-controls="fqa-collapseTwo">
+                      Why is Renal (Kidney) Function Test Done - 2
+                    </button>
+                  </h2>
+                  <div id="fqa-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#frequent-questions-accordian">
+                    <div class="accordion-body">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate velit excepturi, vero quo quibusdam placeat exercitationem illo consequatur nostrum error.
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-      </footer>
-    </main>
+        </div>
+      </div>
+    </section>
 
-    <!-- bootstrap -->
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <!-- swiper -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- why us -->
+    <section id="why-us" class="app-tb-pad">
+      <div class="container">
+        <div class="why-us d-flex flex-wrap">
+          <div class="lt col-12 col-lg-7 mb-3 mb-lg-0">
+            <div class="inner pe-0 pe-lg-5">
+              <p class="head app-color-secondary app-fw-600 mb-3">
+                Why <span class="app-color-primary">1st Pink Lab</span>?
+              </p>
+              <p class="sub-head app-fw-500 mb-3">
+                1st Pink Lab has been present for over 40 years in the market.
+              </p>
 
-    <script>
+              <p class="desc mb-3">
+                1st Pink Lab has a team of 200 senior pathologists and over
+                2000 technicians delivering diagnostic solutions in the areas
+                of routine, semi specialty and super specialty domains like
+                Oncology, Neurology, Gynaecology, Nephrology and many more.
+              </p>
+              <p class="desc mb-4 mb-lg-5">
+                We offer a comprehensive range of 4000+ clinical laboratory
+                tests and profiles, which are used for prediction, early
+                detection, diagnostic screening, confirmation and/or
+                monitoring of the disease
+              </p>
+
+              <button class="app-btn app-btn-primary app-fs-15 py-2">
+                <span class="ms-1">Book Package Now</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="rt col-12 col-lg-5">
+            <div class="inner d-flex align-items-start flex-wrap">
+              <!-- sec 1 -->
+              <div class="sec1 col-12 col-md-6">
+                <!-- item -->
+                <div class="item text-center">
+                  <div class="inner shadow-box bg-white d-flex flex-column justify-content-center">
+                    <div class="img mb-3">
+                      <img src="images/icons/lab-icon.png" alt="" class="img-fluid" width="50" />
+                    </div>
+                    <div class="text">
+                      <p class="mb-0 app-fw-500 app-fs-15">
+                        170+ Advanced Labs
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- item -->
+                <div class="item text-center">
+                  <div class="inner shadow-box bg-white d-flex flex-column justify-content-center">
+                    <div class="img mb-3">
+                      <img src="images/icons/hospital-icon.png" alt="" class="img-fluid" width="50" />
+                    </div>
+                    <div class="text">
+                      <p class="mb-0 app-fw-500 app-fs-15">
+                        Trusted by Leading Doctors & Hospitals
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- sec 2 -->
+              <div class="sec2 col-12 col-md-6 pt-md-3">
+                <!-- item -->
+                <div class="item text-center">
+                  <div class="inner shadow-box bg-white d-flex flex-column justify-content-center">
+                    <div class="img mb-3">
+                      <img src="images/icons/science-office.png" alt="" class="img-fluid" width="50" />
+                    </div>
+                    <div class="text">
+                      <p class="mb-0 app-fw-500 app-fs-15">
+                        Over 2000+ Scientific Officers
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- item -->
+                <div class="item text-center">
+                  <div class="inner shadow-box bg-white d-flex flex-column justify-content-center">
+                    <div class="img mb-3">
+                      <img src="images/icons/accuracy-icon.png" alt="" class="img-fluid" width="50" />
+                    </div>
+                    <div class="text">
+                      <p class="mb-0 app-fw-500 app-fs-15">
+                        Proficiency Testing for Accurate Reports
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- download app -->
+    <section id="download-app" class="app-tb-mar">
+      <div class="container">
+        <div class="download-app d-flex flex-wrap">
+          <!-- lt -->
+          <div class="lt col-12 col-lg-3 app-t-pad d-none d-lg-block">
+            <img src="images/ios-img.png" alt="" class="img-fluid" />
+          </div>
+
+          <!-- center -->
+          <div class="center d-flex align-items-center justify-content-center col-12 col-lg-6 px-3 py-3">
+            <div class="inner text-center">
+              <p class="head app-color-secondary app-fw-500 mb-3">
+                Simplifying Healthcare Impacting Lives
+              </p>
+              <p class="sub-head app-color-primary app-fw-600 mb-4">
+                Download the App for Free
+              </p>
+              <div class="d-flex apps-links d-flex justify-content-center">
+                <a href="#" class="download-link android">
+                  <img src="images/icons/ios-download-icon.png" alt="" class="img-fluid" />
+                </a>
+                <a href="#" class="download-link ios">
+                  <img src="images/icons/ios-download-icon.png" alt="" class="img-fluid" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- rt -->
+          <div class="rt col-12 col-lg-3 d-none d-lg-block">
+            <img src="images/android-img.png" alt="" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- patients testimonial -->
+    <section id="patients-testimonial" class="app-t-pad">
+      <div class="container">
+        <div class="patients-testimonial d-flex flex-wrap">
+          <!-- lt -->
+          <div class="lt">
+            <div class="inner">
+              <p class="head app-color-secondary app-fw-600 mb-3 mb-lg-4">
+                What Our Patients are Saying About Us
+              </p>
+              <div class="ratings d-flex app-fs-17 mb-3">
+                <i class="bi bi-star-fill app-color-primary me-2"></i>
+                <i class="bi bi-star-fill app-color-primary me-2"></i>
+                <i class="bi bi-star-fill app-color-primary me-2"></i>
+                <i class="bi bi-star-fill app-color-primary me-2"></i>
+                <i class="bi bi-star-fill app-color-primary me-2"></i>
+              </div>
+              <p class="desc app-fs-15 app-fw-600">
+                4.5 Review from out patients on google
+              </p>
+              <img src="images/microscope.png" alt="" class="img-fluid d-none d-lg-block" />
+            </div>
+          </div>
+
+          <!-- rt -->
+          <div class="rt col pt-lg-3">
+            <div class="inner d-flex flex-wrap">
+              <!-- item container -->
+              <div class="col-12 col-xl-6 item-container">
+                <!-- item main -->
+                <div class="item-main">
+                  <div class="main-inner shadow-box bg-white">
+                    <div class="ratings app-fs-14 d-flex mb-3">
+                      <i class="bi bi-star-fill app-color-primary me-1"></i>
+                      <i class="bi bi-star-fill app-color-primary me-1"></i>
+                      <i class="bi bi-star-fill app-color-primary me-1"></i>
+                      <i class="bi bi-star-fill app-color-primary me-1"></i>
+                      <i class="bi bi-star-half app-color-primary me-1"></i>
+                    </div>
+
+                    <div class="pateint-details d-flex align-items-center mb-3">
+                      <div class="img">
+                        <img
+                          src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
+                          alt="" class="img-fluid rounded-circle" width="60" height="60" />
+                      </div>
+                      <div class="text ps-3">
+                        <p class="name app-color-secondary app-fw-600 mb-1">
+                          Meghan Watts
+                        </p>
+                        <p class="desc app-fs-14 mb-0">Marketing Manager</p>
+                      </div>
+                    </div>
+                    <p class="desc app-fs-15 mb-0">
+                      Lorem ipsum dolor sit amet, consectet adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore
+                      magna aliqua enim ad minim veniam Lorem ipsum dolor sit
+                      amet, consectet adipiscing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua enim ad
+                      minim veniam
+                    </p>
+                  </div>
+                </div>
+
+                <!-- item main -->
+                <div class="item-main">
+                  <div class="main-inner shadow-box bg-white">
+                    <div class="ratings app-fs-14 d-flex mb-3">
+                      <i class="bi bi-star-fill app-color-primary me-1"></i>
+                      <i class="bi bi-star-fill app-color-primary me-1"></i>
+                      <i class="bi bi-star-fill app-color-primary me-1"></i>
+                      <i class="bi bi-star-fill app-color-primary me-1"></i>
+                      <i class="bi bi-star-half app-color-primary me-1"></i>
+                    </div>
+
+                    <div class="pateint-details d-flex align-items-center mb-3">
+                      <div class="img">
+                        <img
+                          src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
+                          alt="" class="img-fluid rounded-circle" width="60" height="60" />
+                      </div>
+                      <div class="text ps-3">
+                        <p class="name app-color-secondary app-fw-600 mb-1">
+                          Meghan Watts
+                        </p>
+                        <p class="desc app-fs-14 mb-0">Marketing Manager</p>
+                      </div>
+                    </div>
+                    <p class="desc app-fs-15 mb-0">
+                      Lorem ipsum dolor sit amet, consectet adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore
+                      magna aliqua enim ad minim veniam Lorem ipsum dolor sit
+                      amet, consectet adipiscing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua enim ad
+                      minim veniam
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- item container -->
+              <div class="col-12 col-xl-6 item-container pt-lg-4">
+                <!-- item main -->
+                <div class="item-main">
+                  <div class="main-inner shadow-box bg-white">
+                    <div class="ratings app-fs-14 d-flex mb-3">
+                      <i class="bi bi-star-fill app-color-primary me-1"></i>
+                      <i class="bi bi-star-fill app-color-primary me-1"></i>
+                      <i class="bi bi-star-fill app-color-primary me-1"></i>
+                      <i class="bi bi-star-fill app-color-primary me-1"></i>
+                      <i class="bi bi-star-half app-color-primary me-1"></i>
+                    </div>
+
+                    <div class="pateint-details d-flex align-items-center mb-3">
+                      <div class="img">
+                        <img
+                          src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
+                          alt="" class="img-fluid rounded-circle" width="60" height="60" />
+                      </div>
+                      <div class="text ps-3">
+                        <p class="name app-color-secondary app-fw-600 mb-1">
+                          Meghan Watts
+                        </p>
+                        <p class="desc app-fs-14 mb-0">Marketing Manager</p>
+                      </div>
+                    </div>
+                    <p class="desc app-fs-15 mb-0">
+                      Lorem ipsum dolor sit amet, consectet adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore
+                      magna aliqua enim ad minim veniam Lorem ipsum dolor sit
+                      amet, consectet adipiscing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua enim ad
+                      minim veniam
+                    </p>
+                  </div>
+                </div>
+
+                <!-- item main -->
+                <div class="item-main">
+                  <div class="main-inner shadow-box bg-white">
+                    <div class="ratings app-fs-14 d-flex mb-3">
+                      <i class="bi bi-star-fill app-color-primary me-1"></i>
+                      <i class="bi bi-star-fill app-color-primary me-1"></i>
+                      <i class="bi bi-star-fill app-color-primary me-1"></i>
+                      <i class="bi bi-star-fill app-color-primary me-1"></i>
+                      <i class="bi bi-star-half app-color-primary me-1"></i>
+                    </div>
+
+                    <div class="pateint-details d-flex align-items-center mb-3">
+                      <div class="img">
+                        <img
+                          src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
+                          alt="" class="img-fluid rounded-circle" width="60" height="60" />
+                      </div>
+                      <div class="text ps-3">
+                        <p class="name app-color-secondary app-fw-600 mb-1">
+                          Meghan Watts
+                        </p>
+                        <p class="desc app-fs-14 mb-0">Marketing Manager</p>
+                      </div>
+                    </div>
+                    <p class="desc app-fs-15 mb-0">
+                      Lorem ipsum dolor sit amet, consectet adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore
+                      magna aliqua enim ad minim veniam Lorem ipsum dolor sit
+                      amet, consectet adipiscing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua enim ad
+                      minim veniam
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="app-tb-pad">
+      <!-- footer top -->
+      <section id="footer-top" class="app-b-pad">
+        <div class="container">
+          <div class="footer-top row">
+            <!-- ftitem -->
+            <div class="col-12 col-lg-4 ft-item mb-3 mb-lg-0">
+              <div class="inner bg-white shadow-box d-flex align-items-center">
+                <div class="img pe-3">
+                  <img src="images/icons/nabl-icon.png" alt="" class="img-fluid" width="55" />
+                </div>
+                <div class="text app-fs-18 app-fw-600 app-color-secondary">
+                  NABL & CAP Accredited labs
+                </div>
+              </div>
+            </div>
+            <!-- ftitem -->
+            <div class="col-12 col-lg-4 ft-item mb-3 mb-lg-0">
+              <div class="inner bg-white shadow-box d-flex align-items-center">
+                <div class="img pe-3">
+                  <img src="images/icons/smart-report-icon.png" alt="" class="img-fluid" width="55" />
+                </div>
+                <div class="text app-fs-18 app-fw-600 app-color-secondary">
+                  Smart Report with Trend Analysis
+                </div>
+              </div>
+            </div>
+            <!-- ftitem -->
+            <div class="col-12 col-lg-4 ft-item mb-3 mb-lg-0">
+              <div class="inner bg-white shadow-box d-flex align-items-center">
+                <div class="img pe-3">
+                  <img src="images/icons/leading-doctors-icon.png" alt="" class="img-fluid" width="55" />
+                </div>
+                <div class="text app-fs-18 app-fw-600 app-color-secondary">
+                  Reports trusted by leading doctors and hospitals
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer main -->
+      <section id="footer-main">
+        <div class="container">
+          <div class="footer-main row">
+            <!-- fm item -->
+            <div class="fm-item col-12 col-md-6 col-lg-4 col-xl-3 mb-3 mb-lg-0">
+              <div class="fm-item-inner">
+                <p class="fm-head app-color-secondary app-fs-19 app-fw-600 mb-2">
+                  Company
+                </p>
+                <div class="fm-links-container d-flex flex-wrap">
+                  <!-- link -->
+                  <div class="col-12 col-md-6 fm-link mb-2 pe-2">
+                    <a href="#" class="primary-link-hover app-fw-500 app-fs-15">
+                      About Us
+                    </a>
+                  </div>
+                  <!-- link -->
+                  <div class="col-12 col-md-6 fm-link mb-2 pe-2">
+                    <a href="#" class="primary-link-hover app-fw-500 app-fs-15">
+                      Investors
+                    </a>
+                  </div>
+                  <!-- link -->
+                  <div class="col-12 col-md-6 fm-link mb-2 pe-2">
+                    <a href="#" class="primary-link-hover app-fw-500 app-fs-15">
+                      Our Labs
+                    </a>
+                  </div>
+                  <!-- link -->
+                  <div class="col-12 col-md-6 fm-link mb-2 pe-2">
+                    <a href="#" class="primary-link-hover app-fw-500 app-fs-15">
+                      Partners
+                    </a>
+                  </div>
+                  <!-- link -->
+                  <div class="col-12 col-md-6 fm-link mb-2 pe-2">
+                    <a href="#" class="primary-link-hover app-fw-500 app-fs-15">
+                      Corporates
+                    </a>
+                  </div>
+                  <!-- link -->
+                  <div class="col-12 col-md-6 fm-link mb-2 pe-2">
+                    <a href="#" class="primary-link-hover app-fw-500 app-fs-15">
+                      CSR
+                    </a>
+                  </div>
+                  <!-- link -->
+                  <div class="col-12 col-md-6 fm-link mb-2 pe-2">
+                    <a href="#" class="primary-link-hover app-fw-500 app-fs-15">
+                      Media Center
+                    </a>
+                  </div>
+                  <!-- link -->
+                  <div class="col-12 col-md-6 fm-link mb-2 pe-2">
+                    <a href="#" class="primary-link-hover app-fw-500 app-fs-15">
+                      Careers
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- fm item -->
+            <div class="fm-item col-12 col-md-6 col-lg-4 col-xl-3 mb-3 mb-lg-0">
+              <div class="fm-item-inner">
+                <p class="fm-head app-color-secondary app-fs-19 app-fw-600 mb-2">
+                  Services
+                </p>
+                <div class="fm-links-container d-flex flex-column">
+                  <!-- link -->
+                  <div class="col-12 col-md-6 fm-link mb-2">
+                    <a href="#" class="primary-link-hover app-fw-500 app-fs-15">
+                      Pathology Testing Services
+                    </a>
+                  </div>
+                  <!-- link -->
+                  <div class="col-12 col-md-6 fm-link mb-2">
+                    <a href="#" class="primary-link-hover app-fw-500 app-fs-15">
+                      Corporate Wellness
+                    </a>
+                  </div>
+                  <!-- link -->
+                  <div class="col-12 col-md-6 fm-link mb-2">
+                    <a href="#" class="primary-link-hover app-fw-500 app-fs-15">
+                      Lab In Hospitals
+                    </a>
+                  </div>
+                  <!-- link -->
+                  <div class="col-12 col-md-6 fm-link mb-2">
+                    <a href="#" class="primary-link-hover app-fw-500 app-fs-15">
+                      Clinical Research Services
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- fm item -->
+            <div class="fm-item col-12 col-md-6 col-lg-4 col-xl-2 mb-3 mb-lg-0">
+              <div class="fm-item-inner">
+                <p class="fm-head app-color-secondary app-fs-19 app-fw-600 mb-2">
+                  Contact Us
+                </p>
+                <div class="fm-links-container d-flex flex-column">
+                  <!-- link -->
+                  <div class="col-12 col-md-6 fm-link mb-2 pe-2">
+                    <a href="#" class="primary-link-hover app-fw-500 app-fs-15">
+                      Contact Us
+                    </a>
+                  </div>
+                  <!-- link -->
+                  <div class="col-12 col-md-6 fm-link mb-2 pe-2">
+                    <a href="#" class="primary-link-hover app-fw-500 app-fs-15">
+                      Sitemap
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- fm item -->
+            <div class="fm-item col-12 col-md-6 col-lg-12 col-xl-4 mb-3 mb-lg-0">
+              <div class="fm-item-inner">
+                <p class="fm-head app-color-secondary app-fs-19 app-fw-600 mb-2">
+                  Subscribe Our Newsletter
+                </p>
+                <div class="newsletter-container">
+                  <div class="app-form d-flex">
+                    <input type="text" class="form-control col" placeholder="Enter Your Email" />
+                    <button class="app-btn app-btn-primary app-fs-15 py-2">
+                      Submit
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="container">
+        <div class="divider my-4 border"></div>
+      </div>
+
+      <!-- footer bottom -->
+      <section id="footer-bottom">
+        <div class="container">
+          <div class="footer-bottom row">
+            <!-- item -->
+            <div class="col-12 col-lg-6 fm-lt">
+              <div class="inner">
+                <p class="fm-head app-color-secondary app-fs-19 app-fw-600 mb-2">
+                  Download App
+                </p>
+                <div class="download-links d-flex mb-2">
+                  <a href="#" class="download-link android">
+                    <img src="images/icons/ios-download-icon.png" alt="" class="img-fluid" />
+                  </a>
+                  <a href="#" class="download-link ios">
+                    <img src="images/icons/ios-download-icon.png" alt="" class="img-fluid" />
+                  </a>
+                </div>
+                <p class="desc app-fw-500 app-fs-14 mb-0">
+                  View your reports and upcoming health checkups at one place.
+                </p>
+              </div>
+            </div>
+            <!-- item -->
+            <div class="col-12 col-lg-6 fm-rt">
+              <div class="inner">
+                <p class="fm-head app-color-secondary app-fs-19 app-fw-600 mb-2">
+                  Follow us
+                </p>
+
+                <div class="social-links-container d-flex">
+                  <!-- link -->
+                  <a href="#" class="social-link me-2">
+                    <div
+                      class="inner d-flex align-items-center justify-content-center rounded-circle app-bg-primary text-white">
+                      <i class="bi bi-facebook"></i>
+                    </div>
+                  </a>
+                  <!-- link -->
+                  <a href="#" class="social-link me-2">
+                    <div
+                      class="inner d-flex align-items-center justify-content-center rounded-circle app-bg-primary text-white">
+                      <i class="bi bi-twitter"></i>
+                    </div>
+                  </a>
+                  <!-- link -->
+                  <a href="#" class="social-link me-2">
+                    <div
+                      class="inner d-flex align-items-center justify-content-center rounded-circle app-bg-primary text-white">
+                      <i class="bi bi-instagram"></i>
+                    </div>
+                  </a>
+                  <!-- link -->
+                  <a href="#" class="social-link me-2">
+                    <div
+                      class="inner d-flex align-items-center justify-content-center rounded-circle app-bg-primary text-white">
+                      <i class="bi bi-linkedin"></i>
+                    </div>
+                  </a>
+                  <!-- link -->
+                  <a href="#" class="social-link me-2">
+                    <div
+                      class="inner d-flex align-items-center justify-content-center rounded-circle app-bg-primary text-white">
+                      <i class="bi bi-youtube"></i>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </main>
+
+  <!-- bootstrap -->
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <!-- swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <!-- app js -->
+  <script src="js/script.js"></script>
+
+  <script>
+    window.addEventListener('load', function () {
       new Swiper(".home-main-slider", {
         pagination: {
           el: ".swiper-pagination",
@@ -1593,6 +1460,23 @@
           nextEl: ".packages-slider-button-prev",
           prevEl: ".packages-slider-button-next",
         },
+        autoplay: {
+          delay: 5000,
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+          },
+          1200: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        },
       });
 
       new Swiper(".health-tests-slider", {
@@ -1602,6 +1486,23 @@
           nextEl: ".health-tests-slider-button-prev",
           prevEl: ".health-tests-slider-button-next",
         },
+        autoplay: {
+          delay: 5000,
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+          },
+          1200: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        },
       });
 
       new Swiper(".upload-prescription-slider", {
@@ -1610,7 +1511,36 @@
         },
         slidesPerView: 3,
         spaceBetween: 30,
+        centeredSlides: true,
+        roundLengths: true,
+        autoplay: {
+          delay: 5000,
+        },
+        effect: "coverflow",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+          },
+          1200: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        },
       });
-    </script>
-  </body>
+    })
+  </script>
+</body>
+
 </html>

@@ -47,7 +47,10 @@ header {
   }
   .main {
     .logo {
-      width: 180px;
+      width: 140px;
+      @include min_width($BP_sm_min) {
+        width: 180px;
+      }
     }
     .right-link {
       > .icon {
@@ -71,6 +74,19 @@ header {
         right: 7px;
         background: #fff;
         color: #333;
+      }
+      &.call-to-link {
+        @include max_width($BP_sm_max) {
+          display: none !important;
+        }
+      }
+      &.call-to-link,
+      &.login-signup-link {
+        > .icon {
+          @include max_width($BP_sm_max) {
+            display: none;
+          }
+        }
       }
     }
 
@@ -96,9 +112,25 @@ header {
         width: 50px;
         font-size: 22px;
       }
+      select {
+        @include max_width($BP_lg_max) {
+          width: 90px;
+        }
+      }
       input {
         @include min_width($BP_lg_min) {
+          width: 180px;
+        }
+        @include min_width($BP_xl_min) {
           width: 300px;
+        }
+      }
+      @include max_width($BP_lg_max) {
+        width: 100%;
+        order: 1;
+        margin-top: 10px;
+        input {
+          flex-grow: 1;
         }
       }
     }
@@ -115,7 +147,9 @@ header {
     }
     .menu-main {
       .menu-item {
-        margin-right: 20px;
+        @include min_width($BP_xl_min) {
+          margin-right: 20px;
+        }
         .dropdown {
           top: 80%;
           left: -10px;
@@ -123,8 +157,10 @@ header {
           opacity: 0;
           @include transition;
           > .inner {
-            background-color: #fff;
-            width: 200px;
+            @include min_width($BP_xl_min) {
+              background-color: #fff;
+              width: 200px;
+            }
             padding: 5px 0;
             // min-height: 200px;
             border-radius: 10px;
@@ -142,7 +178,64 @@ header {
           z-index: 2;
           opacity: 1;
         }
+        @include max_width($BP_xl_max) {
+          > a {
+            display: block;
+            padding: 10px 10px;
+          }
+          .dropdown {
+            position: relative !important;
+            background: #f7f7f7;
+            opacity: 1;
+            border-radius: 5px;
+            padding: 0;
+            left: 0;
+            top: 0;
+            display: none;
+          }
+          &:hover > .dropdown {
+            display: block;
+          }
+        }
       }
+
+      @include max_width($BP_xl_max) {
+        position: fixed;
+        background: #fff;
+        width: 300px;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 12;
+        padding: 15px;
+        overflow: auto;
+        @include transition;
+        &:not(.active) {
+          left: -100%;
+        }
+      }
+    }
+
+    .mobile-menu-overlay {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: lighten($color: $app_color_secondary, $amount: 70%);
+      z-index: -12;
+      opacity: 0;
+      &.active {
+        opacity: 0.6;
+        z-index: 12;
+      }
+    }
+
+    .mobile-menu-icon {
+      height: 32px;
+      width: 32px;
+      font-size: 22px;
+      border-radius: 3px;
     }
   }
 }
@@ -155,7 +248,7 @@ header {
   $width: 380px;
   .slider-main {
     width: 100%;
-    @include min_width($BP_lg_min) {
+    @include min_width($BP_xl_min) {
       width: calc(100% - #{$width});
     }
 
@@ -164,9 +257,25 @@ header {
         padding: 10px 30px;
         top: 0;
         left: 0;
+        @include max_width($BP_md_max) {
+          padding: 10px 15px;
+        }
         .heading {
           font-size: 28px;
           line-height: normal;
+          @include max_width($BP_md_max) {
+            font-size: 15px;
+          }
+        }
+        .other {
+          @include max_width($BP_md_max) {
+            display: none;
+          }
+        }
+        @include max_width($BP_md_max) {
+          button {
+            font-size: 12px !important;
+          }
         }
       }
     }
@@ -190,7 +299,7 @@ header {
   }
   .test-online {
     width: 100%;
-    @include min_width($BP_lg_min) {
+    @include min_width($BP_xl_min) {
       width: $width;
       padding-left: 40px;
     }
@@ -235,7 +344,9 @@ header {
   border-radius: 15px;
   padding: 20px 20px;
   .item {
-    padding: 0 15px;
+    @include min_width($BP_md_min) {
+      padding: 0 15px;
+    }
     .img {
       height: 45px;
       img {
@@ -328,15 +439,21 @@ header {
     transform: translateY(-50%);
     z-index: 1;
     font-size: 25px;
+    background: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    width: 35px;
+    text-align: center;
+    z-index: 1;
+    border-radius: 5px;
     &.swiper-button-disabled {
       opacity: 0.4;
     }
   }
   .packages-slider-button-prev {
-    right: 0;
+    right: 5px;
   }
   .packages-slider-button-next {
-    left: 0;
+    left: 5px;
   }
 }
 // packages styles end
@@ -367,15 +484,21 @@ header {
     transform: translateY(-50%);
     z-index: 1;
     font-size: 25px;
+    background: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    width: 35px;
+    text-align: center;
+    z-index: 1;
+    border-radius: 5px;
     &.swiper-button-disabled {
       opacity: 0.4;
     }
   }
   .health-tests-slider-button-prev {
-    right: 0;
+    right: 5px;
   }
   .health-tests-slider-button-next {
-    left: 0;
+    left: 5px;
   }
 }
 // health tests styles end
@@ -458,7 +581,8 @@ header {
 }
 .check-up-categories {
   .category-link {
-    padding-right: 15px;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
     padding-bottom: 15px;
     > a {
       background-color: #fff;
@@ -481,8 +605,11 @@ header {
   }
   .rt {
     .item {
-      margin-right: 20px;
+      // margin-right: 20px;
       margin-bottom: 20px;
+      @include min_width($BP_md_min) {
+        margin-right: 20px;
+      }
       > .inner {
         height: 160px;
         padding: 15px 15px;
@@ -500,8 +627,13 @@ header {
 }
 .download-app {
   img {
-    margin: 0 auto;
-    width: 95%;
+    // margin: 0 auto;
+    // width: 95%;
+  }
+  .apps-links {
+    img {
+      width: 150px;
+    }
   }
   .center {
     > .inner {
@@ -510,7 +642,10 @@ header {
       }
     }
     .head {
-      font-size: 30px;
+      font-size: 24px;
+      @include min_width($BP_md_min) {
+        font-size: 30px;
+      }
     }
     .sub-head {
       font-size: 20px;
@@ -532,23 +667,33 @@ header {
     padding-right: 30px;
   }
   > .lt {
-    width: 330px;
+    width: 100%;
+    @include min_width($BP_lg_min) {
+      width: 330px;
+    }
     .head {
-      font-size: 30px;
+      font-size: 24px;
+      @include min_width($BP_md_min) {
+        font-size: 30px;
+      }
     }
     .desc {
-      margin-bottom: 80px;
+      @include min_width($BP_lg_min) {
+        margin-bottom: 80px;
+      }
     }
   }
   > .rt {
-    padding-left: 15px;
+    // padding-left: 15px;
     @include min_width($BP_lg_min) {
       padding-left: 35px;
     }
 
     .item-main {
-      margin-right: 15px;
       margin-bottom: 15px;
+      @include min_width($BP_lg_min) {
+        margin-right: 15px;
+      }
       @include min_width($BP_lg_min) {
         margin-right: 35px;
         margin-bottom: 35px;
@@ -597,17 +742,15 @@ header {
 }
 // footer styles end
 
-
 // breadcrumbs styles start
 #app-breadcrumbs {
-  
 }
 .app-breadcrumbs {
   .bd-link {
-    color: #5D5D5D;
+    color: #5d5d5d;
     font-size: 13px;
     &:not(:last-child):after {
-      content: '/';
+      content: "/";
       margin-left: 10px;
       margin-right: 10px;
     }
@@ -622,19 +765,68 @@ header {
 }
 // breadcrumbs styles end
 
-
 // test details styles end
 #test-details {
-
+}
+.shadow-box {
+  padding: 15px;
+  border-radius: 15px;
+  @include min_width($BP_md_min) {
+    padding: 25px;
+  }
 }
 .test-details {
-
+  .td-rt-sec {
+    width: 100%;
+    @include min_width($BP_lg_min) {
+      width: 350px;
+    }
+    @include min_width($BP_xl_min) {
+      width: 400px;
+    }
+  }
   .test-details-main {
-    >.inner {
-      padding: 25px;
-      border-radius: 15px;
+  }
+  .price-sec {
+    .main-price {
+      font-size: 22px;
+    }
+  }
+
+  .test-requirements {
+    .tr-item {
+      .img {
+      }
+      .text {
+      }
+      .tr-badge {
+        padding: 7px 13px;
+        background-color: lighten($color: $app_color_secondary, $amount: 72%);
+        border: 1px solid lighten($color: $app_color_secondary, $amount: 65%);
+        border-radius: 5px;
+        font-size: 14px;
+      }
+    }
+  }
+  .home-visit-sec {
+    > .inner {
+      padding: 0;
+      overflow: hidden;
+      > div {
+        padding: 20px;
+      }
+    }
+    .head {
+      padding: 15px 20px;
+      background-color: lighten($color: $app_color_secondary, $amount: 70%);
+      font-size: 18px;
     }
   }
 }
 // test details styles end
 
+@include max_width($BP_md_max) {
+  div[aria-controls^=swiper-wrapper] {
+    display: none !important;
+  }
+}
