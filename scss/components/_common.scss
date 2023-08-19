@@ -262,3 +262,19 @@ $appTBpadLGmin: 60px;
     border-bottom-color: #fff;
   }
 }
+
+.shadow-box {
+  padding: 15px;
+  border-radius: 15px;
+  @include min_width($BP_md_min) {
+    padding: 25px;
+  }
+}
+
+.white-hover-box {
+  background-color: #fff;
+  @include transition;
+  &:hover {
+    background-color: #f5f5f5;
+  }
+}

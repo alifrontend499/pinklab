@@ -282,6 +282,24 @@ a.opacity-link-hover:hover {
   border-bottom-color: #fff;
 }
 
+.shadow-box {
+  padding: 15px;
+  border-radius: 15px;
+}
+@media screen and (min-width: 768px) {
+  .shadow-box {
+    padding: 25px;
+  }
+}
+
+.white-hover-box {
+  background-color: #fff;
+  transition: 0.2s;
+}
+.white-hover-box:hover {
+  background-color: #f5f5f5;
+}
+
 .app-btn {
   padding: 10px 20px;
   border-radius: 8px;
@@ -331,6 +349,18 @@ a.opacity-link-hover:hover {
   }
 }
 
+.modal-btn-close {
+  background-color: #dbdbdb;
+  border-radius: 50%;
+  font-size: 10px;
+  padding: 11px;
+  margin-left: auto;
+  margin-right: 15px;
+  margin-top: 15px;
+  box-shadow: none !important;
+  margin-bottom: -13px;
+}
+
 .app-form > input:not([type=radio]):not([type=checkbox]),
 .app-form > select,
 .app-form > textarea {
@@ -354,11 +384,96 @@ a.opacity-link-hover:hover {
   min-height: 45px;
 }
 
+.app-radio {
+  cursor: pointer;
+}
+.app-radio .circle {
+  position: relative;
+  height: 22px;
+  width: 22px;
+  border: 1px solid #ff057c;
+  background-color: #fff;
+  overflow: hidden;
+  padding: 6px;
+  opacity: 0.4;
+  transition: 0.2s;
+}
+.app-radio .circle::after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+.app-radio .text {
+  font-weight: 500;
+  color: #666;
+}
+.app-radio:hover .circle {
+  opacity: 1;
+}
+.app-radio > input {
+  display: none;
+}
+.app-radio > input:checked + .circle {
+  opacity: 1;
+  background: #ff057c;
+}
+.app-radio > input:checked ~ .text {
+  color: #333;
+}
+
+.app-checkbox {
+  cursor: pointer;
+}
+.app-checkbox .square {
+  position: relative;
+  height: 22px;
+  width: 22px;
+  border: 1px solid #ff057c;
+  background-color: #fff;
+  overflow: hidden;
+  font-size: 17px;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  opacity: 0.4;
+  transition: 0.2s;
+}
+.app-checkbox .square > i {
+  opacity: 0;
+  position: relative;
+  top: -2px;
+}
+.app-checkbox .text {
+  font-weight: 500;
+  color: #666;
+}
+.app-checkbox:hover .square {
+  opacity: 1;
+}
+.app-checkbox > input {
+  display: none;
+}
+.app-checkbox > input:checked + .square {
+  opacity: 1;
+  background: #ff057c;
+}
+.app-checkbox > input:checked + .square > i {
+  opacity: 1;
+}
+.app-checkbox > input:checked ~ .text {
+  color: #333;
+}
+
 body {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
   background-color: #f3f7f8;
+  color: #333;
 }
 
 header {
@@ -1017,16 +1132,6 @@ header .menu .mobile-menu-icon {
   color: #ff057c;
 }
 
-.shadow-box {
-  padding: 15px;
-  border-radius: 15px;
-}
-@media screen and (min-width: 768px) {
-  .shadow-box {
-    padding: 25px;
-  }
-}
-
 .test-details .td-rt-sec {
   width: 100%;
 }
@@ -1067,4 +1172,155 @@ header .menu .mobile-menu-icon {
   div[aria-controls^=swiper-wrapper] {
     display: none !important;
   }
+}
+#bookSlotModal .modal-content {
+  background-color: #f6f9ff;
+}
+
+.book-slot-modal .header-sec .logo img {
+  width: 170px;
+}
+.book-slot-modal .header-sec .sm-badges .badge-item {
+  padding: 2px 7px;
+  border: 1px solid #cbcbcb;
+  border-radius: 25px;
+  color: #5d5d5d;
+  font-size: 10px;
+}
+.book-slot-modal .content-sec .city-selection,
+.book-slot-modal .content-sec .add-member-details {
+  padding: 10px;
+  background-color: #eef4ff;
+}
+.book-slot-modal .content-sec .add-data-item .heading .ad-badge {
+  height: 30px;
+  width: 30px;
+}
+.book-slot-modal .content-sec .added-tests {
+  padding: 10px;
+  background-color: #d7e4fc;
+  border-radius: 10px;
+}
+.book-slot-modal .content-sec .add-instructions > .inner {
+  background-color: #eef4ff;
+  border: 1px solid #8b8b8b;
+  padding: 6px 10px;
+  border-radius: 10px;
+}
+.book-slot-modal .content-sec .add-another-member-2 > .inner {
+  border: 2px dashed #b8b8b8;
+}
+
+#bookCollectionSlotModal .modal-dialog {
+  max-width: 640px;
+}
+#bookCollectionSlotModal .modal-body {
+  padding: 15px;
+}
+@media screen and (min-width: 992px) {
+  #bookCollectionSlotModal .modal-body {
+    padding: 30px;
+  }
+}
+
+.book-collection-slot-modal .bcs-modal-item .heading-sec > i {
+  font-size: 28px;
+}
+.book-collection-slot-modal .bcs-modal-item .heading-sec > span {
+  font-size: 22px;
+  margin-left: 15px;
+}
+.book-collection-slot-modal .bcs-modal-item .dates > .inner {
+  margin: 0 -10px;
+}
+.book-collection-slot-modal .bcs-modal-item .check-item {
+  padding: 0 5px 10px;
+}
+@media screen and (min-width: 768px) {
+  .book-collection-slot-modal .bcs-modal-item .check-item {
+    padding: 0 10px;
+  }
+}
+.book-collection-slot-modal .bcs-modal-item .check-item .inner-box {
+  cursor: pointer;
+  color: #00277a;
+  border: 1px solid #00277a;
+  padding: 17px 10px;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+.book-collection-slot-modal .bcs-modal-item .check-item .inner-box .date {
+  font-size: 30px;
+}
+.book-collection-slot-modal .bcs-modal-item .check-item .inner-box .check {
+  height: 40px;
+  width: 40px;
+  font-size: 25px;
+  padding-top: 1px;
+  border: 2px solid #00277a;
+  opacity: 0;
+  color: #00277a;
+  top: -10px;
+  right: -10px;
+  transition: 0.2s;
+}
+.book-collection-slot-modal .bcs-modal-item .check-item input:checked + .inner-box {
+  background-color: #00277a;
+  color: #fff;
+}
+.book-collection-slot-modal .bcs-modal-item .check-item input:checked + .inner-box > .check {
+  opacity: 1;
+}
+.book-collection-slot-modal .bcs-modal-item .time-item > .inner {
+  background-color: #eef4ff;
+  padding: 15px;
+  border-radius: 20px;
+  border: 1px solid #d7e4fc;
+}
+@media screen and (min-width: 992px) {
+  .book-collection-slot-modal .bcs-modal-item .time-item > .inner {
+    padding: 25px;
+  }
+}
+.book-collection-slot-modal .bcs-modal-item .time-item .head .icon {
+  height: 30px;
+  width: 30px;
+}
+.book-collection-slot-modal .bcs-modal-item .time-item .head.primary .icon {
+  color: #ff057c;
+  background-color: #ffe0ef;
+}
+.book-collection-slot-modal .bcs-modal-item .time-item .head.secondary .icon {
+  color: #00277a;
+  background-color: #c7d9ff;
+}
+.book-collection-slot-modal .bcs-modal-item .time-item .content {
+  margin: 0 -10px;
+}
+.book-collection-slot-modal .bcs-modal-item .time-item .content .inner-box {
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+.book-collection-slot-modal .bcs-modal-item .time-item .content .inner-box .check {
+  padding-top: 0px;
+  height: 37px;
+  width: 37px;
+  top: -13px;
+  right: -13px;
+}
+
+#bookNowModal .modal-content {
+  background-color: #f9f9f9;
+}
+
+.book-now-modal .book-now .app-form button {
+  background: #fff;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  box-shadow: none;
+  padding: 3px 9px;
+  font-size: 13px;
+  border-radius: 5px;
 }/*# sourceMappingURL=style.css.map */

@@ -13,6 +13,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   background-color: #f3f7f8;
+  color: #333;
 }
 
 // header styles start
@@ -768,13 +769,6 @@ header {
 // test details styles end
 #test-details {
 }
-.shadow-box {
-  padding: 15px;
-  border-radius: 15px;
-  @include min_width($BP_md_min) {
-    padding: 25px;
-  }
-}
 .test-details {
   .td-rt-sec {
     width: 100%;
@@ -826,7 +820,211 @@ header {
 // test details styles end
 
 @include max_width($BP_md_max) {
-  div[aria-controls^=swiper-wrapper] {
+  div[aria-controls^="swiper-wrapper"] {
     display: none !important;
+  }
+}
+
+// modals styles
+// book slot modal
+#bookSlotModal {
+  .modal-content {
+    background-color: #f6f9ff;
+  }
+}
+.book-slot-modal {
+  .header-sec {
+    .logo {
+      img {
+        width: 170px;
+      }
+    }
+    .sm-badges {
+      .badge-item {
+        padding: 2px 7px;
+        border: 1px solid #cbcbcb;
+        border-radius: 25px;
+        color: #5d5d5d;
+        font-size: 10px;
+      }
+    }
+  }
+
+  .content-sec {
+    .city-selection,
+    .add-member-details {
+      padding: 10px;
+      background-color: #eef4ff;
+    }
+    .add-data-item {
+      .heading {
+        .ad-badge {
+          height: 30px;
+          width: 30px;
+        }
+      }
+      .city-selection {
+      }
+    }
+
+    .added-tests {
+      padding: 10px;
+      background-color: #d7e4fc;
+      border-radius: 10px;
+    }
+
+    .add-instructions {
+      > .inner {
+        background-color: #eef4ff;
+        border: 1px solid #8b8b8b;
+        padding: 6px 10px;
+        border-radius: 10px;
+      }
+    }
+    .add-another-member-2 {
+      > .inner {
+        border: 2px dashed #b8b8b8;
+      }
+    }
+  }
+}
+
+// book collection modal
+#bookCollectionSlotModal {
+  .modal-dialog {
+    max-width: 640px;
+  }
+  .modal-body {
+    padding: 15px;
+    @include min_width($BP_lg_min) {
+      padding: 30px;
+    }
+  }
+}
+// book collection slot modal
+.book-collection-slot-modal {
+  .bcs-modal-item {
+    .heading-sec {
+      > i {
+        font-size: 28px;
+      }
+      > span {
+        font-size: 22px;
+        margin-left: 15px;
+      }
+    }
+    .dates {
+      > .inner {
+        margin: 0 -10px;
+      }
+    }
+    .check-item {
+      padding: 0 5px 10px;
+      @include min_width($BP_md_min) {
+        padding: 0 10px;
+      }
+      .inner-box {
+        cursor: pointer;
+        color: $app_color_secondary;
+        border: 1px solid $app_color_secondary;
+        padding: 17px 10px;
+        border-radius: 10px;
+        @include transition;
+        .date {
+          font-size: 30px;
+        }
+        .check {
+          height: 40px;
+          width: 40px;
+          font-size: 25px;
+          padding-top: 1px;
+          border: 2px solid $app_color_secondary;
+          opacity: 0;
+          color: $app_color_secondary;
+          top: -10px;
+          right: -10px;
+          @include transition;
+        }
+      }
+      input:checked {
+        & + .inner-box {
+          background-color: $app_color_secondary;
+          color: #fff;
+          > .check {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    .time-item {
+      > .inner {
+        background-color: #eef4ff;
+        padding: 15px;
+        border-radius: 20px;
+        border: 1px solid #d7e4fc;
+        @include min_width($BP_lg_min) {
+          padding: 25px;
+        }
+      }
+      .head {
+        .icon {
+          height: 30px;
+          width: 30px;
+        }
+        &.primary {
+          .icon {
+            color: $app_color_primary;
+            background-color: lighten($color: $app_color_primary, $amount: 43%);
+          }
+        }
+        &.secondary {
+          .icon {
+            color: $app_color_secondary;
+            background-color: lighten(
+              $color: $app_color_secondary,
+              $amount: 65%
+            );
+          }
+        }
+      }
+      .content {
+        margin: 0 -10px;
+        .inner-box {
+          padding-top: 13px;
+          padding-bottom: 13px;
+          .check {
+            padding-top: 0px;
+            height: 37px;
+            width: 37px;
+            top: -13px;
+            right: -13px;
+          }
+        }
+      }
+    }
+  }
+}
+// book now modal
+#bookNowModal {
+  .modal-content {
+    background-color: #f9f9f9;
+  }
+}
+.book-now-modal {
+  .book-now {
+    .app-form {
+      button {
+        background: #fff;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        border: none;
+        box-shadow: none;
+        padding: 3px 9px;
+        font-size: 13px;
+        border-radius: 5px;
+      }
+    }
   }
 }

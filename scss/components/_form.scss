@@ -20,3 +20,101 @@
     min-height: 45px;
   }
 }
+
+// radio
+.app-radio {
+  cursor: pointer;
+  .circle {
+    position: relative;
+    height: 22px;
+    width: 22px;
+    border: 1px solid $app_color_primary;
+    background-color: #fff;
+    overflow: hidden;
+    padding: 6px;
+    opacity: 0.4;
+    @include transition;
+    &::after {
+      content: "";
+      display: block;
+      height: 100%;
+      width: 100%;
+      background-color: white;
+      border-radius: 50%;
+      @include transition;
+    }
+  }
+  .text {
+    font-weight: 500;
+    color: #666;
+  }
+
+  &:hover .circle {
+    opacity: 1;
+  }
+
+  > input {
+    display: none;
+    &:checked {
+      & + {
+        .circle {
+          opacity: 1;
+          background: $app_color_primary;
+        }
+      }
+      & ~ .text {
+        color: #333;
+      }
+    }
+  }
+}
+
+// checkbox
+.app-checkbox {
+  cursor: pointer;
+  .square {
+    position: relative;
+    height: 22px;
+    width: 22px;
+    border: 1px solid $app_color_primary;
+    background-color: #fff;
+    overflow: hidden;
+    font-size: 17px;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    opacity: 0.4;
+    @include transition;
+    > i {
+      opacity: 0;
+      position: relative;
+      top: -2px;
+    }
+  }
+  .text {
+    font-weight: 500;
+    color: #666;
+  }
+
+  &:hover .square {
+    opacity: 1;
+  }
+
+  > input {
+    display: none;
+    &:checked {
+      & + {
+        .square {
+          opacity: 1;
+          background: $app_color_primary;
+          > i {
+            opacity: 1;
+          }
+        }
+      }
+      & ~ .text {
+        color: #333;
+      }
+    }
+  }
+}

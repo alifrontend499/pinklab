@@ -18,6 +18,642 @@
 </head>
 
 <body>
+
+  <!-- // remove this part -->
+  <section class="my-5">
+    <div class="container">
+      <p>Modals: remove this later</p>
+      <div class="d-flex">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookSlotModal">
+          Open Book Slot Modal
+        </button>
+        &nbsp; &nbsp; &nbsp;
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookCollectionSlotModal">
+          Open Book Collection Slot Modal
+        </button>
+        &nbsp; &nbsp; &nbsp;
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookNowModal">
+          Book Now Modal
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- // remove this part -->
+
+  <div class="modal1">
+    <!-- BOOK SLOT | Modal -->
+    <div class="modal fade" id="bookSlotModal" tabindex="-1" aria-labelledby="bookSlotModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button type="button" class="btn-close modal-btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-body">
+            <div class="book-slot-modal">
+              <div class="inner">
+                <!-- header -->
+                <div class="header-sec mb-3 mb-lg-4˙">
+                  <!-- logo -->
+                  <div class="logo text-center mb-1">
+                    <img src="images/logo.png" alt="" class="img-fluid" style="background-color: red;">
+                  </div>
+                  <div class="sm-desc mb-1">
+                    <p class="mb-0 app-fw-500 app-fs-13 text-center">
+                      Get blood and covid testing at home in 60 minutes, across Bengaluru, Delhi - NCR, Hyderabad and
+                      Mumbai
+                    </p>
+                  </div>
+                  <div class="sm-badges d-flex flex-wrap justify-content-center">
+                    <!-- item -->
+                    <div class="badge-item d-flex align-items-center mx-1">
+                      <img src="images/icons/customers-icon.png" alt="" width="12" height="12">
+                      <span class="ps-1">1 Million+ Customers</span>
+                    </div>
+                    <!-- item -->
+                    <div class="badge-item d-flex align-items-center mx-1">
+                      <img src="images/icons/stestcop-icon.png" alt="" width="12" height="12">
+                      <span class="ps-1">1,000+ Doctors</span>
+                    </div>
+                    <!-- item -->
+                    <div class="badge-item d-flex align-items-center mx-1">
+                      <img src="images/icons/nabl-certified-icon.png" alt="" width="12" height="12">
+                      <span class="ps-1">NABL Accredited</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- content -->
+                <div class="content-sec">
+                  <div class="inner">
+                    <!-- item | Your ˙contact information -->
+                    <div class="add-data-item mb-3 mb-lg-5">
+                      <div class="inner">
+                        <div class="heading d-flex align-items-center app-fw-500 mb-2">
+                          <span
+                            class="ad-badge d-flex align-items-center justify-content-center rounded-circle text-white app-bg-secondary">1</span>
+                          <span class="ps-3">Your contact information</span>
+                        </div>
+                        <!-- selection -->
+                        <div class="city-selection mb-2">
+                          <div class="head app-fs-15 mb-2">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <span class="ms-1">City</span>
+                          </div>
+                          <div class="content">
+                            <div class="inner d-flex flex-wrap">
+                              <label class="app-radio d-flex align-items-center me-3 mb-2">
+                                <input type="radio" name="city-select">
+                                <span class="circle rounded-circle"></span>
+                                <span class="text ps-2">Bengaluru</span>
+                              </label>
+                              <label class="app-radio d-flex align-items-center me-3 mb-2">
+                                <input type="radio" name="city-select">
+                                <span class="circle rounded-circle"></span>
+                                <span class="text ps-2">Delhi - NCR</span>
+                              </label>
+                              <label class="app-radio d-flex align-items-center me-3 mb-2">
+                                <input type="radio" name="city-select">
+                                <span class="circle rounded-circle"></span>
+                                <span class="text ps-2">Hyderabad</span>
+                              </label>
+                              <label class="app-radio d-flex align-items-center me-3 mb-2">
+                                <input type="radio" name="city-select">
+                                <span class="circle rounded-circle"></span>
+                                <span class="text ps-2">Mumbai</span>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="add-details">
+                          <div class="app-form mb-2">
+                            <input type="text" class="form-control bg-white" placeholder="Full Name">
+                          </div>
+                          <div class="app-form mb-2">
+                            <input type="text" class="form-control bg-white" placeholder="Mobile Number">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- item | Add member & test details -->
+                    <div class="add-data-item mb-3 mb-lg-5">
+                      <div class="inner">
+                        <div class="heading d-flex align-items-center app-fw-500 mb-2">
+                          <span
+                            class="ad-badge d-flex align-items-center justify-content-center rounded-circle text-white app-bg-secondary">2</span>
+                          <span class="ps-3">Add member & test details</span>
+                        </div>
+
+                        <!-- add memeber details -->
+                        <div class="add-member-details">
+                          <div class="head d-flex align-items-center mb-2">
+                            <div class="lt d-flex pe-2">
+                              <i class="bi bi-person-circle"></i>
+                              <span class="ms-1">Member 1</span>
+                            </div>
+
+                            <label class="app-checkbox d-flex align-items-center me-3 mb-2 ms-auto">
+                              <input type="checkbox" name="city-select">
+                              <span class="square">
+                                <i class="bi bi-check2"></i>
+                              </span>
+                              <span class="text ps-2">My Self</span>
+                            </label>
+                          </div>
+
+                          <div class="content">
+                            <div class="app-form mb-2">
+                              <input type="text" class="form-control bg-white" placeholder="Full Name">
+                            </div>
+                            <div class="d-flex mb-2">
+                              <div class="app-form col me-1">
+                                <input type="text" class="form-control bg-white" placeholder="Age">
+                              </div>
+                              <div class="app-form col ms-1">
+                                <select class="form-control bg-white">
+                                  <option value="" selected disabled>Gender</option>
+                                  <option value="">Male</option>
+                                  <option value="">Female</option>
+                                  <option value="">other</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- added tests -->
+                        <div class="added-tests mb-3">
+                          <div class="inner">
+                            <div class="head d-flex align-items-center mb-2">
+                              <div class="heading d-flex align-items-center app-fw-500 mb-2">
+                                <span class="ps-3">Tests & Checkups added</span>
+                              </div>
+                            </div>
+
+                            <!-- item -->
+                            <div class="added-tests-container">
+                              <!-- tests item -->
+                              <div class="added-test-item d-flex align-items-center mb-3">
+                                <div
+                                  class="inner shadow-box rounded-3 d-flex align-items-center bg-white py-2 px-3 col">
+                                  <p class="test mb-0 col pe-2 app-fs-15">Kidney Function Test with Electrolytes (KFT /
+                                    RFT)</p>
+                                  <p class="price mb-0 app-color-primary app-fw-600">₹ 700</p>
+                                </div>
+
+                                <a href="#"
+                                  class="remove-test shadow-box rounded-3 white-hover-box py-0 px-2 ms-3 app-fs-20"
+                                  title="Remove">
+                                  <i class="bi bi-x"></i>
+                                </a>
+                              </div>
+                            </div>
+
+                            <!-- add test item -->
+                            <div class="add-new-test-item mb-3">
+                              <div class="inner shadow-box rounded-3 d-flex align-items-center bg-white py-2 px-3">
+                                <div class="lt col">
+                                  <p class="app-fs-17 app-fw-600 mb-0 app-color-primary">Add More tests / health
+                                    checkups</p>
+                                  <p class="app-fs-15 mb-0">QT pcp, Thyroid, cpc, & tests</p>
+                                </div>
+                                <a href="#" class="remove-test rounded-3 p-0 ms-3 app-fs-20 app-color-primary"
+                                  title="Add More">
+                                  <i class="bi bi-arrow-right-circle-fill"></i>
+                                </a>
+                              </div>
+                            </div>
+
+                            <!-- add instructions -->
+                            <div class="add-instructions">
+                              <div class="inner d-flex align-items-center">
+                                <p class="mb-0 col app-fs-15">Any medical history or special instructions?</p>
+                                <a href="#" class="ms-2" title="Add"><i class="bi bi-pencil-fill"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- add another member -->
+                        <div class="add-another-member mb-2">
+                          <div class="inner shadow-box rounded-3 d-flex align-items-center bg-white py-2 px-3">
+                            <p class="mb-0 col">Add another member</p>
+                            <a href="#" class="remove-test rounded-3 p-0 ms-3 app-fs-20 app-color-primary"
+                              title="Add More">
+                              <i class="bi bi-arrow-right-circle-fill"></i>
+                            </a>
+                          </div>
+                        </div>
+
+                        <!-- add another member 2 -->
+                        <div class="add-another-member-2">
+                          <div class="inner shadow-box rounded-3 d-flex align-items-center bg-white py-1 px-3">
+                            <p class="mb-0 col app-fw-300 app-fs-14">Add another member</p>
+                            <a href="#" class="remove-test rounded-3 p-0 ms-3 app-fs-20" title="Add More">
+                              <i class="bi bi-upload"></i>
+                            </a>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <!-- item | Address for collection? -->
+                    <div class="add-data-item mb-3 mb-lg-5">
+                      <div class="inner">
+                        <div class="heading d-flex align-items-center app-fw-500 mb-2">
+                          <span
+                            class="ad-badge d-flex align-items-center justify-content-center rounded-circle text-white app-bg-secondary">3</span>
+                          <span class="ps-3">Address for collection?</span>
+                        </div>
+
+                        <!-- add address -->
+                        <div class="add-address-member mb-2">
+                          <div class="inner shadow-box rounded-3 d-flex align-items-center bg-white p-3">
+                            <p class="mb-0 col app-color-secondary app-fw-500 pe-2">+ Add address</p>
+                            <a href="#" class="remove-test rounded-3 p-0 ms-3 app-fs-20 app-color-primary" title="Add">
+                              <i class="bi bi-geo-alt-fill"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- book slot -->
+                    <div class="book-slot">
+                      <div class="inner bg-white py-4 px-3">
+                        <p class="mb-2 text-center app-fs-14 app-fw-500">Free sample collection on this order!</p>
+                        <button class="app-btn app-btn-primary w-100 app-fw-700 app-fs-20 py-3">
+                          <span class="ms-1">BOOK SLOT</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOOK COLLECTION SLOT | Modal -->
+    <div class="modal fade" id="bookCollectionSlotModal" tabindex="-1" aria-labelledby="bookCollectionSlotModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- <button type="button" class="btn-close modal-btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+          <div class="modal-body">
+            <div class="book-collection-slot-modal">
+              <!-- back btn -->
+              <div class="back-btn mb-3">
+                <a href="#" class="d-flex align-items-center" data-bs-dismiss="modal">
+                  <i class="bi bi-chevron-left app-fs-20"></i>
+                  <span class="app-fs-14 ms-1">Book Collection Slot</span>
+                </a>
+              </div>
+
+              <!-- item | Select day -->
+              <div class="bcs-modal-item mb-3 mb-lg-5">
+                <!-- heading -->
+                <div class="heading-sec d-flex align-items-center text-black mb-3">
+                  <i class="bi bi-calendar3"></i>
+                  <span class="app-fw-500">Select day</span>
+                </div>
+
+                <!-- content -->
+                <div class="content-sec">
+                  <div class="dates">
+                    <div class="inner d-flex flex-wrap">
+                      <!-- date item -->
+                      <div class="check-item col-6 col-md-3">
+                        <label class="inner position-relative text-center d-block h-100">
+                          <input type="checkbox" checked class="d-none">
+                          <span class="inner-box d-flex flex-column h-100">
+                            <p class="month app-fw-500 mb-0">AUG</p>
+                            <p class="date app-fw-700 my-1">12</p>
+                            <p class="day app-fw-500 mb-0">Today</p>
+                            <!-- check -->
+                            <div class="check rounded-circle bg-white position-absolute">
+                              <i class="bi bi-check2"></i>
+                            </div>
+                          </span>
+                        </label>
+                      </div>
+
+                      <!-- date item -->
+                      <div class="check-item col-6 col-md-3">
+                        <label class="inner position-relative text-center d-block h-100">
+                          <input type="checkbox" class="d-none">
+                          <span class="inner-box d-flex flex-column h-100">
+                            <p class="month app-fw-500 mb-0">AUG</p>
+                            <p class="date app-fw-700 my-1">13</p>
+                            <p class="day app-fw-500 mb-0">Tomorrow</p>
+                            <!-- check -->
+                            <div class="check rounded-circle bg-white position-absolute">
+                              <i class="bi bi-check2"></i>
+                            </div>
+                          </span>
+                        </label>
+                      </div>
+
+                      <!-- date item -->
+                      <div class="check-item col-6 col-md-3">
+                        <label class="inner position-relative text-center d-block h-100">
+                          <input type="checkbox" class="d-none">
+                          <span class="inner-box d-flex flex-column h-100">
+                            <p class="month app-fw-500 mb-0">AUG</p>
+                            <p class="date app-fw-700 my-1">14</p>
+                            <p class="day app-fw-500 mb-0">Monday</p>
+                            <!-- check -->
+                            <div class="check rounded-circle bg-white position-absolute">
+                              <i class="bi bi-check2"></i>
+                            </div>
+                          </span>
+                        </label>
+                      </div>
+
+                      <!-- date item -->
+                      <div class="check-item col-6 col-md-3">
+                        <label class="inner position-relative text-center d-block h-100">
+                          <input type="checkbox" class="d-none">
+                          <span class="inner-box d-flex flex-column h-100">
+                            <p class="month app-fw-500 mb-0">AUG</p>
+                            <p class="date app-fw-700 my-1">15</p>
+                            <p class="day app-fw-500 mb-0">Tuesday</p>
+                            <!-- check -->
+                            <div class="check rounded-circle bg-white position-absolute">
+                              <i class="bi bi-check2"></i>
+                            </div>
+                          </span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- item | Select preferred time slot -->
+              <div class="bcs-modal-item mb-3 mb-lg-5">
+                <!-- heading -->
+                <div class="heading-sec d-flex align-items-center text-black mb-3">
+                  <i class="bi bi-clock"></i>
+                  <span class="app-fw-500">Select preferred time slot</span>
+                </div>
+
+                <!-- content -->
+                <div class="content-sec">
+                  <!-- item item -->
+                  <div class="time-item mb-3">
+                    <div class="inner ">
+                      <p class="head primary d-flex align-items-center app-fw-500 app-fs-17 mb-3 mb-lg-4">
+                        <span class="icon d-flex align-items-center justify-content-center rounded-circle">
+                          <i class="bi bi-brightness-high-fill"></i>
+                        </span>
+                        <span class="ms-2">Afternoon</span>
+                      </p>
+
+                      <div class="content d-flex flex-wrap">
+                        <!-- time check item -->
+                        <div class="check-item col-6 col-md-3">
+                          <label class="inner position-relative text-center d-block h-100">
+                            <input type="checkbox" checked class="d-none">
+                            <span class="inner-box d-flex flex-column rounded-5 h-100">
+                              <p class="time app-fw-500 mb-0">04:15 PM</p>
+                              <!-- check -->
+                              <div class="check rounded-circle bg-white position-absolute">
+                                <i class="bi bi-check2"></i>
+                              </div>
+                            </span>
+                          </label>
+                        </div>
+
+                        <!-- time check item -->
+                        <div class="check-item col-6 col-md-3">
+                          <label class="inner position-relative text-center d-block h-100">
+                            <input type="checkbox" class="d-none">
+                            <span class="inner-box d-flex flex-column rounded-5 h-100">
+                              <p class="time app-fw-500 mb-0">04:15 PM</p>
+                              <!-- check -->
+                              <div class="check rounded-circle bg-white position-absolute">
+                                <i class="bi bi-check2"></i>
+                              </div>
+                            </span>
+                          </label>
+                        </div>
+
+                        <!-- time check item -->
+                        <div class="check-item col-6 col-md-3">
+                          <label class="inner position-relative text-center d-block h-100">
+                            <input type="checkbox" class="d-none">
+                            <span class="inner-box d-flex flex-column rounded-5 h-100">
+                              <p class="time app-fw-500 mb-0">04:15 PM</p>
+                              <!-- check -->
+                              <div class="check rounded-circle bg-white position-absolute">
+                                <i class="bi bi-check2"></i>
+                              </div>
+                            </span>
+                          </label>
+                        </div>
+
+                        <!-- time check item -->
+                        <div class="check-item col-6 col-md-3">
+                          <label class="inner position-relative text-center d-block h-100">
+                            <input type="checkbox" class="d-none">
+                            <span class="inner-box d-flex flex-column rounded-5 h-100">
+                              <p class="time app-fw-500 mb-0">04:15 PM</p>
+                              <!-- check -->
+                              <div class="check rounded-circle bg-white position-absolute">
+                                <i class="bi bi-check2"></i>
+                              </div>
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- item item -->
+                  <div class="time-item">
+                    <div class="inner ">
+                      <p class="head secondary d-flex align-items-center app-fw-500 app-fs-17 mb-3 mb-lg-4">
+                        <span class="icon d-flex align-items-center justify-content-center rounded-circle">
+                          <i class="bi bi-moon-fill"></i>
+                        </span>
+                        <span class="ms-2">Evening</span>
+                      </p>
+
+                      <div class="content d-flex flex-wrap">
+                        <!-- time check item -->
+                        <div class="check-item col-6 col-md-3">
+                          <label class="inner position-relative text-center d-block h-100">
+                            <input type="checkbox" checked class="d-none">
+                            <span class="inner-box d-flex flex-column rounded-5 h-100">
+                              <p class="time app-fw-500 mb-0">04:15 PM</p>
+                              <!-- check -->
+                              <div class="check rounded-circle bg-white position-absolute">
+                                <i class="bi bi-check2"></i>
+                              </div>
+                            </span>
+                          </label>
+                        </div>
+
+                        <!-- time check item -->
+                        <div class="check-item col-6 col-md-3">
+                          <label class="inner position-relative text-center d-block h-100">
+                            <input type="checkbox" class="d-none">
+                            <span class="inner-box d-flex flex-column rounded-5 h-100">
+                              <p class="time app-fw-500 mb-0">04:15 PM</p>
+                              <!-- check -->
+                              <div class="check rounded-circle bg-white position-absolute">
+                                <i class="bi bi-check2"></i>
+                              </div>
+                            </span>
+                          </label>
+                        </div>
+
+                        <!-- time check item -->
+                        <div class="check-item col-6 col-md-3">
+                          <label class="inner position-relative text-center d-block h-100">
+                            <input type="checkbox" class="d-none">
+                            <span class="inner-box d-flex flex-column rounded-5 h-100">
+                              <p class="time app-fw-500 mb-0">04:15 PM</p>
+                              <!-- check -->
+                              <div class="check rounded-circle bg-white position-absolute">
+                                <i class="bi bi-check2"></i>
+                              </div>
+                            </span>
+                          </label>
+                        </div>
+
+                        <!-- time check item -->
+                        <div class="check-item col-6 col-md-3">
+                          <label class="inner position-relative text-center d-block h-100">
+                            <input type="checkbox" class="d-none">
+                            <span class="inner-box d-flex flex-column rounded-5 h-100">
+                              <p class="time app-fw-500 mb-0">04:15 PM</p>
+                              <!-- check -->
+                              <div class="check rounded-circle bg-white position-absolute">
+                                <i class="bi bi-check2"></i>
+                              </div>
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="book-slot">
+                <div class="inner">
+                  <button class="app-btn app-btn-primary w-100 app-fw-700 app-fs-20">
+                    <span class="ms-1">CONFIRM ORDER</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOOK NOW | Modal -->
+    <div class="modal fade" id="bookNowModal" tabindex="-1" aria-labelledby="bookNowModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button type="button" class="btn-close modal-btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-body">
+            <div class="book-now-modal">
+              <p class="heading mb-2 app-fw-600 app-fs-20">Booking Details</p>
+              <p class="req-id app-fs-14 app-fw-500 mb-1">Request ID: <span class="app-color-primary">MUM3958</span></p>
+              <p class="collec-slot app-fs-14 app-fw-500 mb-3">Collection Slot: <span class="app-color-primary">Sat, 12
+                  Aug | 07:00 PM</span></p>
+              <p class="info alert alert-danger px-2 py-1 app-fs-13 d-flex">
+                <i class="bi bi-info-circle app-fs-18 me-2 pt-1"></i>
+                <span>your order is confirmed and you slot is scheduled for your preffered collection time</span>
+              </p>
+
+              <div class="add-address-member mb-2">
+                <div class="inner shadow-box bg-white p-3">
+                  <div class="user-details d-flex align-items-center mb-3">
+                    <div class="lt col pe-2">
+                      <div class="user d-flex">
+                        <div class="icon">
+                          <i class="bi bi-person-circle"></i>
+                        </div>
+                        <div class="name app-fw-600 ms-2">
+                          <p class="mb-0">Abc</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="rt app-fs-15">
+                      <p class="mb-0">33 Years | Male</p>
+                    </div>
+                  </div>
+
+                  <div class="test-and-checkups w-100">
+                    <div class="inner">
+                      <p class="head mb-2 app-fs-12 app-fw-500">TESTS & CHECKUPS</p>
+                      <div class="details-item">
+                        <div class="inner d-flex">
+                          <div class="lt col pe-2">
+                            <p class="mb-0">1. Kidney Function Test with Electrolytes (KFT/RFT)</p>
+                          </div>
+                          <div class="rt">
+                            ₹ 700
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="price-details mb-3">
+                <div class="inner p-3">
+                  <!-- pd item -->
+                  <div class="price-details-item d-flex">
+                    <div class="lt col pe-2">
+                      <p class="mb-0">Sub Total</p>
+                    </div>
+                    <div class="rt">
+                      <p class="mb-0">₹ 700</p>
+                    </div>
+                  </div>
+                  <div class="divider my-2 border"></div>
+                  <!-- pd item -->
+                  <div class="price-details-item app-fw-500 d-flex">
+                    <div class="lt col pe-2">
+                      <p class="mb-0">To Pay</p>
+                    </div>
+                    <div class="rt">
+                      <p class="mb-0">₹ 700</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- book now -->
+              <div class="book-now pt-2">
+                <div class="inner shadow-box bg-white p-3">
+                  <div class="app-form col position-relative mb-3">
+                    <input type="text" class="form-control" placeholder="Enter Coupon Code (if any)">
+                    <button class="d-flex">
+                      <span>APPLY</span>
+                    </button>
+                  </div>
+                  <button class="app-btn app-btn-primary w-100 app-fw-700 app-fs-20 mb-3">
+                    <span class="ms-1">BOOK NOW</span>
+                  </button>
+                  <p class="mb-0 text-center">or pay after sample collection >></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <header>
     <!-- top -->
     <section id="top-links">

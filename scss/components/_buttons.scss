@@ -1,54 +1,67 @@
 .app-btn {
-    padding: 10px 20px;
-    border-radius: 8px;
-    min-width: 120px;
-    display: inline-block;
-    text-decoration: none;
-    @include transition;
-    background-color: #333;
+  padding: 10px 20px;
+  border-radius: 8px;
+  min-width: 120px;
+  display: inline-block;
+  text-decoration: none;
+  @include transition;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  &:hover,
+  &:active,
+  &:focus {
     color: #fff;
-    border: none;
-    &:hover,
-    &:active,
-    &:focus {
-      color: #fff;
-    }
+  }
+  &:hover {
+    background-color: #333;
+    background-color: darken($color: #333, $amount: 5%);
+  }
+  &:active {
+    background-color: darken($color: #333, $amount: 10%);
+  }
+
+  // variant | primary
+  &.app-btn-primary {
+    background-color: $app_color_primary;
     &:hover {
-      background-color: #333;
-      background-color: darken($color: #333, $amount: 5%);
+      background-color: darken($color: $app_color_primary, $amount: 5%);
     }
     &:active {
-      background-color: darken($color: #333, $amount: 10%);
-    }
-  
-    // variant | primary
-    &.app-btn-primary {
-      background-color: $app_color_primary;
-      &:hover {
-        background-color: darken($color: $app_color_primary, $amount: 5%);
-      }
-      &:active {
-        background-color: darken($color: $app_color_primary, $amount: 10%);
-      }
-    }
-    // variant | primary
-    &.app-btn-secondary {
-      background-color: $app_color_secondary;
-      &:hover {
-        background-color: darken($color: $app_color_secondary, $amount: 5%);
-        // box-shadow: 0px 5px 8px rgba(255, 8, 11, 0.5);
-      }
-      &:active {
-        background-color: darken($color: $app_color_secondary, $amount: 10%);
-      }
-    }
-  
-    // button sizes
-    &.app-btn-lg {
-      padding: 12px 19px;
-      @include min_width($BP_lg_min) {
-        padding: 15px 20px;
-        font-size: 18px;
-      }
+      background-color: darken($color: $app_color_primary, $amount: 10%);
     }
   }
+  // variant | primary
+  &.app-btn-secondary {
+    background-color: $app_color_secondary;
+    &:hover {
+      background-color: darken($color: $app_color_secondary, $amount: 5%);
+      // box-shadow: 0px 5px 8px rgba(255, 8, 11, 0.5);
+    }
+    &:active {
+      background-color: darken($color: $app_color_secondary, $amount: 10%);
+    }
+  }
+
+  // button sizes
+  &.app-btn-lg {
+    padding: 12px 19px;
+    @include min_width($BP_lg_min) {
+      padding: 15px 20px;
+      font-size: 18px;
+    }
+  }
+}
+
+// modal
+.modal-btn-close {
+  background-color: #dbdbdb;
+  border-radius: 50%;
+  font-size: 10px;
+  padding: 11px;
+  margin-left: auto;
+  margin-right: 15px;
+  margin-top: 15px;
+  box-shadow: none !important;
+  margin-bottom: -13px;
+}
