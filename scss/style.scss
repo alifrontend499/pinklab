@@ -723,6 +723,18 @@ header {
     }
   }
 }
+.footer-main {
+  .newsletter-container {
+    .app-form {
+      input {
+        background-color: white;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        margin-right: -6px;
+      }
+    }
+  }
+}
 #footer-bottom {
 }
 .footer-bottom {

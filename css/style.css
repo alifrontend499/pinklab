@@ -1106,6 +1106,13 @@ header .menu .mobile-menu-icon {
   height: 100%;
 }
 
+.footer-main .newsletter-container .app-form input {
+  background-color: white;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-right: -6px;
+}
+
 .footer-bottom .fm-lt .download-links a {
   width: 150px;
   margin-right: 15px;
