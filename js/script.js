@@ -37,3 +37,23 @@
     });
   }
 }());
+
+// show more toggle
+(function() {
+  const showMoreBtn = document.querySelector('.app-show-more-btn');
+  if(showMoreBtn) {
+    document.addEventListener('click', function(ev) {
+      ev.preventDefault();
+      const showMoreContainer = ev.target.previousElementSibling;
+      if(showMoreContainer) {
+        if(showMoreContainer.classList.contains('expanded')) {
+          showMoreContainer.classList.remove('expanded')
+          ev.target.innerHTML = 'Show More';
+        } else {
+          showMoreContainer.classList.add('expanded')
+          ev.target.innerHTML = 'Show Less';
+        }
+      }
+    })
+  }
+}());

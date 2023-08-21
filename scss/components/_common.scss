@@ -273,8 +273,17 @@ $appTBpadLGmin: 60px;
 
 .white-hover-box {
   background-color: #fff;
+  overflow: hidden;
   @include transition;
   &:hover {
     background-color: #f5f5f5;
+  }
+}
+
+.show-more-container {
+  height: 100px;
+  overflow: hidden;
+  &.expanded {
+    height: 100%;
   }
 }
