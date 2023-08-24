@@ -230,7 +230,21 @@
                             <div class="add-instructions">
                               <div class="inner d-flex align-items-center">
                                 <p class="mb-0 col app-fs-15">Any medical history or special instructions?</p>
-                                <a href="#" class="ms-2" title="Add"><i class="bi bi-pencil-fill"></i></a>
+                                <a href="#" class="ms-2 add-instructions-btn" title="Add"><i
+                                    class="bi bi-pencil-fill"></i></a>
+                              </div>
+
+                              <div class="content d-none mt-2">
+                                <div class="d-flex justify-content-end mb-1">
+                                  <button class="app-btn app-btn-secondary close-instructions-btn app-fs-13 px-2 py-1"
+                                    style="min-width: auto;">
+                                    Cancel
+                                  </button>
+                                </div>
+                                <div class="app-form">
+                                  <textarea name="" rows="3" placeholder="Add Instructions"
+                                    class="form-control bg-white"></textarea>
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -271,11 +285,24 @@
 
                         <!-- add address -->
                         <div class="add-address-member mb-2">
-                          <div class="inner shadow-box rounded-3 d-flex align-items-center bg-white p-3">
+                          <div class="inner shadow-box rounded-3 open-add-address-for-collection-btn d-flex align-items-center bg-white cursor-pointer p-3">
                             <p class="mb-0 col app-color-secondary app-fw-500 pe-2">+ Add address</p>
                             <a href="#" class="remove-test rounded-3 p-0 ms-3 app-fs-20 app-color-primary" title="Add">
                               <i class="bi bi-geo-alt-fill"></i>
                             </a>
+                          </div>
+
+                          <div class="content d-none mt-2">
+                            <div class="d-flex justify-content-end mb-1">
+                              <button class="app-btn app-btn-secondary close-add-address-for-collection-btn app-fs-13 px-2 py-1"
+                                style="min-width: auto;">
+                                Cancel
+                              </button>
+                            </div>
+                            <div class="app-form">
+                              <textarea name="" rows="3" placeholder="Add Address"
+                                class="form-control bg-white"></textarea>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -330,7 +357,7 @@
                       <!-- date item -->
                       <div class="check-item col-6 col-md-3">
                         <label class="inner position-relative text-center d-block h-100">
-                          <input type="checkbox" checked class="d-none">
+                          <input type="radio" name="select_day" checked class="d-none">
                           <span class="inner-box d-flex flex-column h-100">
                             <p class="month app-fw-500 mb-0">AUG</p>
                             <p class="date app-fw-700 my-1">12</p>
@@ -346,7 +373,7 @@
                       <!-- date item -->
                       <div class="check-item col-6 col-md-3">
                         <label class="inner position-relative text-center d-block h-100">
-                          <input type="checkbox" class="d-none">
+                          <input type="radio" name="select_day" class="d-none">
                           <span class="inner-box d-flex flex-column h-100">
                             <p class="month app-fw-500 mb-0">AUG</p>
                             <p class="date app-fw-700 my-1">13</p>
@@ -362,7 +389,7 @@
                       <!-- date item -->
                       <div class="check-item col-6 col-md-3">
                         <label class="inner position-relative text-center d-block h-100">
-                          <input type="checkbox" class="d-none">
+                          <input type="radio" name="select_day" class="d-none">
                           <span class="inner-box d-flex flex-column h-100">
                             <p class="month app-fw-500 mb-0">AUG</p>
                             <p class="date app-fw-700 my-1">14</p>
@@ -378,7 +405,7 @@
                       <!-- date item -->
                       <div class="check-item col-6 col-md-3">
                         <label class="inner position-relative text-center d-block h-100">
-                          <input type="checkbox" class="d-none">
+                          <input type="radio" name="select_day" class="d-none">
                           <span class="inner-box d-flex flex-column h-100">
                             <p class="month app-fw-500 mb-0">AUG</p>
                             <p class="date app-fw-700 my-1">15</p>
@@ -419,7 +446,7 @@
                         <!-- time check item -->
                         <div class="check-item col-6 col-md-3">
                           <label class="inner position-relative text-center d-block h-100">
-                            <input type="checkbox" checked class="d-none">
+                            <input type="radio" name="afternoon_id" checked class="d-none">
                             <span class="inner-box d-flex flex-column rounded-5 h-100">
                               <p class="time app-fw-500 mb-0">04:15 PM</p>
                               <!-- check -->
@@ -433,7 +460,7 @@
                         <!-- time check item -->
                         <div class="check-item col-6 col-md-3">
                           <label class="inner position-relative text-center d-block h-100">
-                            <input type="checkbox" class="d-none">
+                            <input type="radio" name="afternoon_id" class="d-none">
                             <span class="inner-box d-flex flex-column rounded-5 h-100">
                               <p class="time app-fw-500 mb-0">04:15 PM</p>
                               <!-- check -->
@@ -447,7 +474,7 @@
                         <!-- time check item -->
                         <div class="check-item col-6 col-md-3">
                           <label class="inner position-relative text-center d-block h-100">
-                            <input type="checkbox" class="d-none">
+                            <input type="radio" name="afternoon_id" class="d-none">
                             <span class="inner-box d-flex flex-column rounded-5 h-100">
                               <p class="time app-fw-500 mb-0">04:15 PM</p>
                               <!-- check -->
@@ -461,7 +488,7 @@
                         <!-- time check item -->
                         <div class="check-item col-6 col-md-3">
                           <label class="inner position-relative text-center d-block h-100">
-                            <input type="checkbox" class="d-none">
+                            <input type="radio" name="afternoon_id" class="d-none">
                             <span class="inner-box d-flex flex-column rounded-5 h-100">
                               <p class="time app-fw-500 mb-0">04:15 PM</p>
                               <!-- check -->
@@ -489,7 +516,7 @@
                         <!-- time check item -->
                         <div class="check-item col-6 col-md-3">
                           <label class="inner position-relative text-center d-block h-100">
-                            <input type="checkbox" checked class="d-none">
+                            <input type="radio" name="evening_id" checked class="d-none">
                             <span class="inner-box d-flex flex-column rounded-5 h-100">
                               <p class="time app-fw-500 mb-0">04:15 PM</p>
                               <!-- check -->
@@ -503,7 +530,7 @@
                         <!-- time check item -->
                         <div class="check-item col-6 col-md-3">
                           <label class="inner position-relative text-center d-block h-100">
-                            <input type="checkbox" class="d-none">
+                            <input type="radio" name="evening_id" class="d-none">
                             <span class="inner-box d-flex flex-column rounded-5 h-100">
                               <p class="time app-fw-500 mb-0">04:15 PM</p>
                               <!-- check -->
@@ -517,7 +544,7 @@
                         <!-- time check item -->
                         <div class="check-item col-6 col-md-3">
                           <label class="inner position-relative text-center d-block h-100">
-                            <input type="checkbox" class="d-none">
+                            <input type="radio" name="evening_id" class="d-none">
                             <span class="inner-box d-flex flex-column rounded-5 h-100">
                               <p class="time app-fw-500 mb-0">04:15 PM</p>
                               <!-- check -->
@@ -531,7 +558,7 @@
                         <!-- time check item -->
                         <div class="check-item col-6 col-md-3">
                           <label class="inner position-relative text-center d-block h-100">
-                            <input type="checkbox" class="d-none">
+                            <input type="radio" name="evening_id" class="d-none">
                             <span class="inner-box d-flex flex-column rounded-5 h-100">
                               <p class="time app-fw-500 mb-0">04:15 PM</p>
                               <!-- check -->
@@ -1733,10 +1760,11 @@
                   <p class="mb-3 app-fs-15">
                     Upload prescription and we will deliver your medicines
                   </p>
-                  <button class="app-btn app-btn-secondary app-fs-14 py-2">
+                  <label class="app-btn app-btn-secondary app-fs-14 py-2">
+                    <input type="file" class="d-none">
                     <i class="bi bi-paperclip"></i>
                     <span class="ms-1">Upload</span>
-                  </button>
+                  </label>
                 </div>
               </div>
 
@@ -2600,7 +2628,44 @@
           },
         },
       });
-    })
+    });
+
+    // add instructions btn
+    (function () {
+      const openContentBtn = document.querySelector('.add-instructions-btn');
+      const closeContentBtn = document.querySelector('.close-instructions-btn');
+      if (openContentBtn && closeContentBtn) {
+        openContentBtn.addEventListener('click', function (ev) {
+          ev.preventDefault();
+          const parentElement = ev.target.parentNode.parentNode;
+          parentElement.nextElementSibling.classList.remove('d-none');
+        })
+        closeContentBtn.addEventListener('click', function (ev) {
+          ev.preventDefault();
+          const parentElement = ev.target.parentNode.parentNode;
+          parentElement.classList.add('d-none');
+        })
+      }
+    })();
+
+    // add adderss btn
+    (function () {
+      const openContentBtn = document.querySelector('.open-add-address-for-collection-btn');
+      const openContentBtnp = document.querySelector('.open-add-address-for-collection-btn > p');
+      const closeContentBtn = document.querySelector('.close-add-address-for-collection-btn');
+      if (openContentBtn && closeContentBtn) {
+        openContentBtn.addEventListener('click', function (ev) {
+          ev.target.nextElementSibling.classList.remove('d-none');
+        })
+        openContentBtnp.addEventListener('click', function (ev) {
+          ev.target.parentElement.nextElementSibling.classList.remove('d-none');
+        })
+        closeContentBtn.addEventListener('click', function (ev) {
+          const parentElement = ev.target.parentNode.parentNode;
+          parentElement.classList.add('d-none');
+        })
+      }
+    })();
   </script>
 </body>
 
